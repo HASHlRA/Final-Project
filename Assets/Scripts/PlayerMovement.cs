@@ -9,12 +9,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movimiento")]
     private float horizontalMovement = 0f;
-
     [SerializeField] private float velocityMovement;
     [Range (0, 0.3f)] [SerializeField] private float smoothness;
-
     private Vector3 velocity = Vector3.zero;
-
     private bool right = true;
 
     [Header("Jump")]
@@ -22,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask ground;
     [SerializeField] private Transform groundcontrol;
     [SerializeField] private Vector3 boxdimensions;
-    [SerializeField] private bool onground;
+    [SerializeField] private bool onGround;
 
     private bool jump = false;
 
@@ -40,19 +37,26 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalMovement = Input.GetAxis("Horizontal") * velocityMovement;
 
-        animator.SetFloat("Run", Mathf.Abs(horizontalMovement));
+        animator.SetFloat("Horizontal", Mathf.Abs(horizontalMovement));
+
+        animator.SetFloat("VelocityY", rb2D.velocity.y);
 
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
         }
+
     }
 
     private void Fixedupdate()
     {
-        onground = Physics2D.OverlapBox(groundcontrol.position, boxdimensions, 0f, ground);
+        onGround = Physics2D.OverlapBox(groundcontrol.position, boxdimensions, 0f, ground);
+        animator.SetBool("onGround", onGround);
+
         //Move
         Move(horizontalMovement * Time.fixedDeltaTime, jump);
+
+        jump = false;
     }
 
     private void Move(float move, bool jump)
@@ -72,9 +76,9 @@ public class PlayerMovement : MonoBehaviour
             turn();
         }
 
-        if(onground && jump)
+        if(onGround && jump)
         {
-            onground = false;
+            onGround = false;
             rb2D.AddForce(new Vector2(0f, jumpforce));
         }
     }
