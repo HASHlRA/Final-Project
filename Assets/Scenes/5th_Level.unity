@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 83424604}
   - component: {fileID: 83424603}
   m_Layer: 0
-  m_Name: Bringer-of-Death-SpritSheet_0
+  m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
