@@ -184,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityMovement: 250
   smoothness: 0.03
-  jumpforce: 250
+  jumpforce: 300
   ground:
     serializedVersion: 2
     m_Bits: 8
