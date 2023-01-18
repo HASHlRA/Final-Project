@@ -50,10 +50,26 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+    [Header("Dash")]
+
+    [SerializeField] private float dashVelocity;
+    [SerializeField] private float dashTime;
+    [SerializeField] private TrailRenderer trailRenderer;
+
+    private float initialGravity;
+
+    private bool canDash = true;
+
+    private bool canMove = true;
+
+
+
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        initialGravity = rb2D.gravityScale;
     }
 
 
@@ -70,6 +86,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.X) && canDash && onGround)
+        {
+            StartCoroutine(Dash());
         }
 
         if(!onGround && onWall && inputX !=0)
@@ -90,8 +111,12 @@ public class PlayerMovement : MonoBehaviour
 
         onWall = Physics2D.OverlapBox(wallcontrol.position, wallboxdimensions, 0f, ground);
 
+
         //Move
-        Move(horizontalMovement * Time.fixedDeltaTime, jump);
+        if (canMove)
+        {
+            Move(horizontalMovement * Time.fixedDeltaTime, jump);
+        }
 
         jump = false;
 
@@ -165,6 +190,25 @@ public class PlayerMovement : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
+
+
+    private IEnumerator Dash()
+    {
+        canMove = false;
+        canDash = false;
+        rb2D.gravityScale = 0;
+        rb2D.velocity = new Vector2(dashVelocity * transform.localScale.x, 0);
+        animator.SetTrigger("Dash");
+        trailRenderer.emitting = true;
+
+        yield return new WaitForSeconds(dashTime);
+
+        canMove = true;
+        canDash = true;
+        rb2D.gravityScale = initialGravity;
+        trailRenderer.emitting = false;
+    }
+
 
     private void OnDrawGizmos()
     {
