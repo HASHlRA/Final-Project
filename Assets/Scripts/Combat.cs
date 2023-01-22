@@ -46,8 +46,8 @@ public class Combat : MonoBehaviour
         Collider2D[] objects = Physics2D.OverlapCircleAll(hitController.position, hitbox);
 
         foreach (Collider2D collision in objects)
-        {
-            if(collision.CompareTag("Enemy"))
+        { 
+            if (collision.CompareTag("Enemy"))
             {
                 collision.transform.GetComponent<Enemy>().GetDamage(damage);
             }
