@@ -49,7 +49,17 @@ public class Combat : MonoBehaviour
         { 
             if (collision.CompareTag("Enemy"))
             {
-                collision.transform.GetComponent<Enemy>().GetDamage(damage);
+                Enemy e = collision.transform.GetComponent<Enemy>();
+                if(e != null)
+                {
+                    e.GetDamage(damage);
+                }
+
+                Boss b = collision.transform.GetComponent<Boss>();
+                if (b != null)
+                {
+                    b.TakeDamage(damage);
+                }
             }
         }
 

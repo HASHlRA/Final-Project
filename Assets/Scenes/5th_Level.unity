@@ -313,10 +313,10 @@ GameObject:
   - component: {fileID: 83424604}
   - component: {fileID: 83424603}
   - component: {fileID: 83424608}
-  - component: {fileID: 83424607}
   - component: {fileID: 83424606}
+  - component: {fileID: 83424610}
   - component: {fileID: 83424609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -410,27 +410,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!50 &83424607
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83424602}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &83424608
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -469,10 +448,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06d3fd5b1b81c6b41a9cce8586211449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2D: {fileID: 0}
-  player: {fileID: 0}
+  rb2D: {fileID: 83424610}
+  player: {fileID: 1243960726}
   health: 300
-  healthBar: {fileID: 728258890}
+  healthBar: {fileID: 728258893}
+--- !u!50 &83424610
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83424602}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &226657388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,7 +1520,7 @@ GameObject:
   - component: {fileID: 728258889}
   - component: {fileID: 728258892}
   - component: {fileID: 728258891}
-  - component: {fileID: 728258890}
+  - component: {fileID: 728258893}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -1550,18 +1550,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 414}
   m_SizeDelta: {x: 475.6727, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &728258890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728258888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77b68b335e6cde946b33a467b90633ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &728258891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1621,6 +1609,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728258888}
   m_CullTransparentMesh: 1
+--- !u!114 &728258893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728258888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b68b335e6cde946b33a467b90633ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &957491489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2558,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069760681}
   m_CullTransparentMesh: 1
+--- !u!4 &1243960726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2788314870770278122, guid: a9dd03d17dbba2a42988eb58949c0ab3, type: 3}
+  m_PrefabInstance: {fileID: 595168534}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1350617630
 GameObject:
   m_ObjectHideFlags: 0
