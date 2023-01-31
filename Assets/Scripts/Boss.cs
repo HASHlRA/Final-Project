@@ -10,7 +10,7 @@ public class Boss : MonoBehaviour
 
     public Transform player;
 
-    private bool lookingRight = true;
+    [SerializeField] private bool lookingRight;
 
 
     [Header("Life")]
@@ -20,6 +20,16 @@ public class Boss : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
 
 
+    [Header("Attack")]
+
+    [SerializeField] private Transform attackController;
+
+    [SerializeField] private float attackRadius;
+
+    [SerializeField] private float attackDamage;
+
+
+
 
     private void Start()
     {
@@ -27,6 +37,14 @@ public class Boss : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         healthBar.StartHealthBar(health);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
+
+
+    private void Update()
+    {
+        float distancePlayer = Vector2.Distance(transform.position, player.position);
+        animator.SetFloat("distancePlayer", distancePlayer);
+        LookPlayer();
     }
 
 
@@ -56,5 +74,24 @@ public class Boss : MonoBehaviour
             lookingRight = !lookingRight;
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
         }
+    }
+
+    public void Attack()
+    {
+        Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
+
+        foreach (Collider2D collision in objects)
+        {
+            if(collision.CompareTag("Player"))
+            {
+                collision.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackController.position, attackRadius);
     }
 }

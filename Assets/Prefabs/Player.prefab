@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1048370606}
   - component: {fileID: 1048370607}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2788314870612954722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 2788314870770278123}
   - component: {fileID: 248933337}
   - component: {fileID: 1326902649}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2788314871633484104}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WallController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1767580698377037232}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
