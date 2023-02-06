@@ -57,6 +57,7 @@ public class Boss : MonoBehaviour
         if (health <= 0)
         {
             animator.SetTrigger("Death");
+            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 

@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
 
     public Transform player;
 
+    private bool dead;
+
     [SerializeField] private bool lookingRight;
 
 
@@ -52,11 +54,13 @@ public class Enemy : MonoBehaviour
     private void Death()
     {
         animator.SetTrigger("Death");
+        GetComponent<BoxCollider2D>().enabled = false;
+        dead = true;
     }
 
     public void LookPlayer()
     {
-        if ((player.position.x > transform.position.x && !lookingRight) || (player.position.x < transform.position.x && lookingRight))
+        if (((player.position.x > transform.position.x && !lookingRight) || (player.position.x < transform.position.x && lookingRight)) && !dead)
         {
             lookingRight = !lookingRight;
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);

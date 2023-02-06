@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    private BoxCollider2D bc2D;
     private Rigidbody2D rb2D;
 
     [Header("Movimiento")]
@@ -64,10 +64,29 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+    [Header("Attack")]
+
+    [SerializeField] private Transform hitController;
+
+    [SerializeField] private float hitbox;
+
+    [SerializeField] private float damage;
+
+    [SerializeField] private float timeBetweenAttack;
+
+    [SerializeField] private float attackCooldown;
+
+    [SerializeField] private float attackTime;
+
+
+
+
+
 
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        bc2D = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         initialGravity = rb2D.gravityScale;
     }
@@ -100,6 +119,17 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             slide = false;
+        }
+
+        if (attackCooldown > 0)
+        {
+            attackCooldown -= Time.deltaTime;
+        }
+
+        if (Input.GetButtonDown("Attack") && attackCooldown <= 0)
+        {
+            Hit();
+            attackCooldown = timeBetweenAttack;
         }
 
     }
@@ -207,6 +237,53 @@ public class PlayerMovement : MonoBehaviour
         canDash = true;
         rb2D.gravityScale = initialGravity;
         trailRenderer.emitting = false;
+    }
+
+    private void Hit()
+    {
+        StartCoroutine(Attack());
+        Collider2D[] objects = Physics2D.OverlapCircleAll(hitController.position, hitbox);
+
+        foreach (Collider2D collision in objects)
+        {
+            if (collision.CompareTag("Enemy"))
+            {
+                Enemy e = collision.transform.GetComponent<Enemy>();
+                if (e != null)
+                {
+                    e.GetDamage(damage);
+                }
+
+                Boss b = collision.transform.GetComponent<Boss>();
+                if (b != null)
+                {
+                    b.TakeDamage(damage);
+                }
+            }
+        }
+
+    }
+
+    private bool Attack()
+    {
+        canMove = false;
+        canDash = false;
+        jump = false;
+        animator.SetTrigger("Attack");
+
+        yield return new WaitForSeconds(attackTime);
+
+        canMove = true;
+        canDash = true;
+        jump = true;
+    }
+
+
+    private void OnDrawGizmos2()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(hitController.position, hitbox);
+
     }
 
 
