@@ -185,7 +185,6 @@ GameObject:
   - component: {fileID: 2788314870770278126}
   - component: {fileID: 2788314870770278120}
   - component: {fileID: 2788314870770278123}
-  - component: {fileID: 248933337}
   - component: {fileID: 1326902649}
   m_Layer: 7
   m_Name: Player
@@ -343,6 +342,11 @@ MonoBehaviour:
   dashVelocity: 6
   dashTime: 0.4
   trailRenderer: {fileID: 1048370607}
+  hitController: {fileID: 1767580698377037232}
+  hitbox: 0.5
+  damage: 20
+  timeBetweenAttack: 1
+  attackCooldown: 0
 --- !u!95 &2788314870770278123
 Animator:
   serializedVersion: 5
@@ -363,23 +367,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &248933337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2788314870770278129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c8cd4ff3b7cf54c8c85677212aec66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitController: {fileID: 1767580698377037232}
-  hitbox: 0.5
-  damage: 20
-  timeBetweenAttack: 1
-  attackCooldown: 0
 --- !u!114 &1326902649
 MonoBehaviour:
   m_ObjectHideFlags: 0

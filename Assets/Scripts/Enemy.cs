@@ -71,6 +71,7 @@ public class Enemy : MonoBehaviour
     {
         Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
 
+
         foreach (Collider2D collision in objects)
         {
             if (collision.CompareTag("Player"))
@@ -79,6 +80,7 @@ public class Enemy : MonoBehaviour
             }
         }
     }
+
 
     private void OnDrawGizmos()
     {

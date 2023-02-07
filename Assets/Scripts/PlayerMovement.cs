@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundcontrol;
     [SerializeField] private Vector3 boxdimensions;
     [SerializeField] private bool onGround;
-    private bool jump = false;
+    private bool jump = true;
 
 
 
@@ -76,11 +76,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float attackCooldown;
 
-    [SerializeField] private float attackTime;
 
-
-
-
+    private GameObject nearest;
 
 
     private void Start()
@@ -89,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
         bc2D = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         initialGravity = rb2D.gravityScale;
+        Enemy.FindObjectOfType<Enemy>();
     }
 
 
@@ -126,8 +124,9 @@ public class PlayerMovement : MonoBehaviour
             attackCooldown -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Attack") && attackCooldown <= 0)
+        if (Input.GetButtonDown("Attack") && attackCooldown <= 0 && onGround)
         {
+            StartCoroutine(Freeze());
             Hit();
             attackCooldown = timeBetweenAttack;
         }
@@ -224,6 +223,17 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        Collider2D[] objects = Physics2D.OverlapCircleAll(hitController.position, hitbox);
+
+        foreach (Collider2D collision in objects)
+        {
+            if (collision.CompareTag("Enemy"))
+            {
+                GetComponent<BoxCollider2D>().enabled = false;
+                StartCoroutine(EnableBox(0.5F));
+            }
+        }
+
         canMove = false;
         canDash = false;
         rb2D.gravityScale = 0;
@@ -241,7 +251,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Hit()
     {
-        StartCoroutine(Attack());
+
+        animator.SetTrigger("Attack");
+
         Collider2D[] objects = Physics2D.OverlapCircleAll(hitController.position, hitbox);
 
         foreach (Collider2D collision in objects)
@@ -264,18 +276,20 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    private bool Attack()
+    IEnumerator EnableBox(float waitTime)
     {
-        canMove = false;
-        canDash = false;
-        jump = false;
-        animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(waitTime);
+        GetComponent<BoxCollider2D>().enabled = true;
+    }
 
-        yield return new WaitForSeconds(attackTime);
+    IEnumerator Freeze()
+    {
+        rb2D.constraints = RigidbodyConstraints2D.FreezePosition;
 
-        canMove = true;
-        canDash = true;
-        jump = true;
+        yield return new WaitForSecondsRealtime(0.75f);
+
+        rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
+
     }
 
 
