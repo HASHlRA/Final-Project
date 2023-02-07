@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
 
     private bool dead;
 
+    private bool attack;
+
     [SerializeField] private bool lookingRight;
 
 
@@ -69,8 +71,9 @@ public class Enemy : MonoBehaviour
 
     public void Attack()
     {
-        Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
+        StartCoroutine(Freeze());
 
+        Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
 
         foreach (Collider2D collision in objects)
         {
@@ -79,6 +82,16 @@ public class Enemy : MonoBehaviour
                 collision.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
             }
         }
+    }
+
+    IEnumerator Freeze()
+    {
+        rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        yield return new WaitForSecondsRealtime(1f);
+
+        rb2D.constraints = ~RigidbodyConstraints2D.FreezeRotation;
+
     }
 
 
