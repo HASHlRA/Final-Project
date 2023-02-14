@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private bool lookingRight;
 
+    private float distancePlayer;
+
 
     [Header("Attack")]
 
@@ -37,9 +39,14 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        float distancePlayer = Vector2.Distance(transform.position, player.position);
-        animator.SetFloat("distancePlayer", distancePlayer);
+        distancePlayer = Vector2.Distance(transform.position, player.position);
+        
         LookPlayer();
+    }
+
+    private void LateUpdate()
+    {
+        animator.SetFloat("distancePlayer", distancePlayer);
     }
 
     public void GetDamage(float damage)
@@ -62,7 +69,7 @@ public class Enemy : MonoBehaviour
 
     public void LookPlayer()
     {
-        if (((player.position.x > transform.position.x && !lookingRight) || (player.position.x < transform.position.x && lookingRight)) && !dead)
+        if (((player.position.x > transform.position.x && !lookingRight) || (player.position.x < transform.position.x && lookingRight)) && !dead && !attack)
         {
             lookingRight = !lookingRight;
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
@@ -71,6 +78,8 @@ public class Enemy : MonoBehaviour
 
     public void Attack()
     {
+        attack = true;
+
         StartCoroutine(Freeze());
 
         Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
@@ -86,11 +95,13 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Freeze()
     {
-        rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        rb2D.constraints = RigidbodyConstraints2D.FreezePosition;
 
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.75f);
 
-        rb2D.constraints = ~RigidbodyConstraints2D.FreezeRotation;
+        rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
+
+        attack = false;
 
     }
 

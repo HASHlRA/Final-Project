@@ -28,6 +28,8 @@ public class Boss : MonoBehaviour
 
     [SerializeField] private float attackDamage;
 
+    [SerializeField]private bool attack;
+
 
 
 
@@ -70,7 +72,7 @@ public class Boss : MonoBehaviour
 
     public void LookPlayer()
     {
-        if ((player.position.x > transform.position.x && !lookingRight) || (player.position.x < transform.position.x && lookingRight))
+        if ((player.position.x > transform.position.x && !lookingRight) || (player.position.x < transform.position.x && lookingRight) &&!attack)
         {
             lookingRight = !lookingRight;
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
@@ -79,6 +81,10 @@ public class Boss : MonoBehaviour
 
     public void Attack()
     {
+        attack = true;
+
+        StartCoroutine(AttackCooldown());
+
         Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
 
         foreach (Collider2D collision in objects)
@@ -88,6 +94,13 @@ public class Boss : MonoBehaviour
                 collision.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
             }
         }
+    }
+
+    private IEnumerator AttackCooldown()
+    {
+        
+        yield return new WaitForSeconds(0.5f);
+        attack = false;
     }
 
     private void OnDrawGizmos()

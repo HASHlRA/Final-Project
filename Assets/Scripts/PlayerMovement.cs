@@ -286,7 +286,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2D.constraints = RigidbodyConstraints2D.FreezePosition;
 
-        yield return new WaitForSecondsRealtime(0.75f);
+        yield return new WaitForSecondsRealtime(0.55f);
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 

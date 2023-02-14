@@ -2063,7 +2063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2788314870770278122, guid: a9dd03d17dbba2a42988eb58949c0ab3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.22
+      value: -2.298
       objectReference: {fileID: 0}
     - target: {fileID: 2788314870770278122, guid: a9dd03d17dbba2a42988eb58949c0ab3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3486,6 +3486,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8977295472336760226, guid: 35ba225ea0f070b43a807d0d7c2c520d, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8977295472336760226, guid: 35ba225ea0f070b43a807d0d7c2c520d, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8977295472336760226, guid: 35ba225ea0f070b43a807d0d7c2c520d, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8977295472336760234, guid: 35ba225ea0f070b43a807d0d7c2c520d, type: 3}
       propertyPath: m_Name
       value: Samurai
@@ -3496,7 +3508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977295472336760237, guid: 35ba225ea0f070b43a807d0d7c2c520d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.01
+      value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 8977295472336760237, guid: 35ba225ea0f070b43a807d0d7c2c520d, type: 3}
       propertyPath: m_LocalPosition.y
