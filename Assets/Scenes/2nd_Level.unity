@@ -1505,8 +1505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb207b2a7ba29dd4f9686ddd6a507d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uuid: 1
-  facingDirection: {x: 0, y: 0}
+  uuid: 1to2
+  facingDirection: {x: 1, y: 0}
 --- !u!1 &1613733045
 GameObject:
   m_ObjectHideFlags: 0
