@@ -9,31 +9,54 @@ public class GoToScene : MonoBehaviour
     public string uuid; // uuid = universal uniqued identifier
 
     public bool isAutomatic;
-    private bool manualEnter;
+    public bool manualEnter;
+
+    [SerializeField] private int enemiesQuantity;
+    [SerializeField] private int enemiesDestroyed;
+
+    private void Start()
+    {
+        enemiesQuantity = GameObject.FindGameObjectsWithTag("Enemy").Length;
+    }
     private void Update()
     {
-        if (!isAutomatic && manualEnter)
+        manualEnter = false;
+
+        if (!isAutomatic && Input.GetButtonDown("Door"))
         {
-            manualEnter = Input.GetButtonDown("Door");
+            manualEnter = true;
         }
     }
 
     // Teleport automático
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Teleport(other.name);
+        if(other.CompareTag("Player") && enemiesDestroyed == enemiesQuantity)
+        {
+            Teleport(other.gameObject.name);
+        }
     }
 
     // Teleport manual
     private void OnTriggerStay2D(Collider2D other)
     {
-        Teleport(other.name);
+        if (other.CompareTag("Player") && enemiesDestroyed == enemiesQuantity)
+        {
+            Teleport(other.gameObject.name);
+        }
+    }
+
+    public void EnemyDestroyed()
+    {
+        enemiesDestroyed += 1;
     }
 
     private void Teleport(string objName)
     {
+        
         if (objName == "Player")
         {
+            
             if (isAutomatic || (!isAutomatic && manualEnter))
             {
                 FindObjectOfType<PlayerMovement>().nextUuid = uuid;

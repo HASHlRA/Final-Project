@@ -20,5 +20,4 @@ public class StartPoint : MonoBehaviour
 
         player.transform.position = transform.position;
     }
-
 }

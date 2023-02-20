@@ -178,6 +178,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin
       objectReference: {fileID: 0}
+    - target: {fileID: 3096316485966725532, guid: a79a4f192b87d014f86117cf657db6a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3096316485966725534, guid: a79a4f192b87d014f86117cf657db6a4, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79a4f192b87d014f86117cf657db6a4, type: 3}
 --- !u!1 &519420028
@@ -3548,9 +3556,9 @@ GameObject:
   - component: {fileID: 1822444838}
   - component: {fileID: 1822444840}
   - component: {fileID: 1822444839}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: 1-2
-  m_TagString: Untagged
+  m_TagString: Puerta
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3584,7 +3592,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 2nd_Level
   uuid: 1to2
-  isAutomatic: 0
+  isAutomatic: 1
+  manualEnter: 0
+  enemiesQuantity: 0
+  enemiesDestroyed: 0
 --- !u!58 &1822444840
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3595,7 +3606,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -55,7 +55,9 @@ public class Enemy : MonoBehaviour
 
         if(health <= 0)
         {
+            GameObject.FindGameObjectWithTag("Puerta").GetComponent<GoToScene>().EnemyDestroyed();
             Death();
+            StartCoroutine(Destroy());
         }
     }
 
@@ -65,6 +67,12 @@ public class Enemy : MonoBehaviour
         animator.SetTrigger("Death");
         GetComponent<BoxCollider2D>().enabled = false;
         dead = true;
+    }
+
+    IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
     }
 
     public void LookPlayer()
@@ -95,9 +103,9 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Freeze()
     {
-        rb2D.constraints = RigidbodyConstraints2D.FreezePosition;
+        rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSeconds(1.5f);
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 
