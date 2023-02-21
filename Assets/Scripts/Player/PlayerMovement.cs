@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D bc2D;
     private Rigidbody2D rb2D;
     public string nextUuid;
+    public static bool playerCreated;
 
     [Header("Movimiento")]
 
