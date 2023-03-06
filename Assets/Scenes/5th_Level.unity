@@ -6995,6 +6995,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 728258893}
+    - target: {fileID: 2727443097393023189, guid: 8210d050be9741b47adceccf1210a8e0, type: 3}
+      propertyPath: sceneName
+      value: Victory_Screen
+      objectReference: {fileID: 0}
     - target: {fileID: 2727443097393023190, guid: 8210d050be9741b47adceccf1210a8e0, type: 3}
       propertyPath: m_BodyType
       value: 0

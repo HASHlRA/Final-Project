@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class Boss : MonoBehaviour
 
     [SerializeField]private bool attack;
 
-
+    public string sceneName;
 
 
     private void Start()
@@ -60,6 +61,7 @@ public class Boss : MonoBehaviour
         {
             animator.SetTrigger("Death");
             GetComponent<BoxCollider2D>().enabled = false;
+            GoNextScene();
         }
     }
 
@@ -67,6 +69,12 @@ public class Boss : MonoBehaviour
     private void Death()
     {
         Destroy(gameObject);
+    }
+
+    private IEnumerator GoNextScene()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(sceneName);
     }
 
 

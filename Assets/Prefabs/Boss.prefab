@@ -208,3 +208,4 @@ MonoBehaviour:
   attackRadius: 1
   attackDamage: 10
   attack: 0
+  sceneName: Victory_Screen

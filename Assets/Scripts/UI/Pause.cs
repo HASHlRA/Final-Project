@@ -15,6 +15,13 @@ public class Pause : MonoBehaviour
 
     private bool gamePaused = false;
 
+    public Transform startpoint;
+
+    private void Start()
+    {
+        GameObject.Find("Player").transform.position = startpoint.position;
+    }
+
 
     private void Update()
     {
@@ -51,6 +58,7 @@ public class Pause : MonoBehaviour
         gamePaused = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName1);
+        
     }
 
     public void Exit()
