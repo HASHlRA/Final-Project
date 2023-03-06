@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Puerta
   - GameMusic
+  - wallEnemy
   layers:
   - Default
   - TransparentFX
