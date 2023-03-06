@@ -81,7 +81,6 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject nearest;
 
-
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();

@@ -200,10 +200,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 2727443097393023190}
-  player: {fileID: 0}
+  player: {fileID: 2788314870770278122, guid: a9dd03d17dbba2a42988eb58949c0ab3, type: 3}
   lookingRight: 1
   health: 200
   healthBar: {fileID: 0}
   attackController: {fileID: 2727443095698359140}
   attackRadius: 1
   attackDamage: 10
+  attack: 0

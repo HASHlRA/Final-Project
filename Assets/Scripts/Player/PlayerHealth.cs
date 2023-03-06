@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float life;
+
+    public event EventHandler PlayerDeath;
 
     public void TakeDamage(float damage)
     {
@@ -12,7 +15,8 @@ public class PlayerHealth : MonoBehaviour
 
         if (life <= 0)
         {
-            Destroy(gameObject);
+            PlayerDeath?.Invoke(this, EventArgs.Empty);
+            //Destroy(gameObject);
         }
     }
 }
