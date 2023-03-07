@@ -24,10 +24,12 @@ public class GameOver : MonoBehaviour
     public void Restart(string name)
     {
         SceneManager.LoadScene(name);
+        gameoverMenu.SetActive(false);
     }
 
     public void MainMenu(string name1)
     {
         SceneManager.LoadScene(name1);
+        gameoverMenu.SetActive(false);
     }
 }

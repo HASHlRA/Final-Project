@@ -17,9 +17,15 @@ public class Pause : MonoBehaviour
 
     public Transform startpoint;
 
+    private PlayerHealth playerHealth;
+
+    [SerializeField] private HealthBar healthBar;
+
     private void Start()
     {
         GameObject.Find("Player").transform.position = startpoint.position;
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        playerHealth.life = 100;
     }
 
 
@@ -58,7 +64,7 @@ public class Pause : MonoBehaviour
         gamePaused = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName1);
-        
+
     }
 
     public void Exit()
