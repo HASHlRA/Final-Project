@@ -25,7 +25,7 @@ public class Pause : MonoBehaviour
     {
         GameObject.Find("Player").transform.position = startpoint.position;
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-        playerHealth.life = 100;
+        playerHealth.SetMaxHealth();
     }
 
 
@@ -62,8 +62,11 @@ public class Pause : MonoBehaviour
     public void Restart()
     {
         gamePaused = false;
+        pauseButton.SetActive(false);
+        menuPause.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName1);
+        
 
     }
 

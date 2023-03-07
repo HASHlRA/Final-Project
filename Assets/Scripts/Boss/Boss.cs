@@ -18,7 +18,8 @@ public class Boss : MonoBehaviour
 
     [SerializeField] private float health;
 
-    [SerializeField] private HealthBar healthBar;
+    [SerializeField] public HealthBar healthBar;
+
 
 
     [Header("Attack")]
@@ -33,6 +34,14 @@ public class Boss : MonoBehaviour
 
     public string sceneName;
 
+    [SerializeField] private SimpleFlash flashEffect;
+
+    // Audio
+
+    private AudioSource audiosource;
+
+    [SerializeField] private AudioClip AudioDamaged;
+    [SerializeField] private AudioClip AudioAttack;
 
     private void Start()
     {
@@ -40,6 +49,7 @@ public class Boss : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         healthBar.StartHealthBar(health);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        audiosource = GetComponent<AudioSource>();
     }
 
 
@@ -55,21 +65,22 @@ public class Boss : MonoBehaviour
     {
         health -= damage;
 
+        audiosource.PlayOneShot(AudioDamaged);
+
         healthBar.ChangeActualHealth(health);
+
+        flashEffect.Flash();
+
 
         if (health <= 0)
         {
             animator.SetTrigger("Death");
             GetComponent<BoxCollider2D>().enabled = false;
-            GoNextScene();
+            StartCoroutine(GoNextScene());
         }
     }
 
 
-    private void Death()
-    {
-        Destroy(gameObject);
-    }
 
     private IEnumerator GoNextScene()
     {
@@ -91,7 +102,10 @@ public class Boss : MonoBehaviour
     {
         attack = true;
 
+        audiosource.PlayOneShot(AudioAttack);
+
         StartCoroutine(AttackCooldown());
+
 
         Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
 

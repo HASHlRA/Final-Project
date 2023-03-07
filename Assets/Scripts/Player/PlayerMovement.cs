@@ -81,6 +81,17 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject nearest;
 
+
+    // Audio
+
+    private AudioSource audiosource;
+
+    [SerializeField] private AudioClip AudioAttack;
+    [SerializeField] private AudioClip AudioJump;
+    [SerializeField] private AudioClip AudioDash;
+
+
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -88,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         initialGravity = rb2D.gravityScale;
         Enemy.FindObjectOfType<Enemy>();
+        audiosource = GetComponent<AudioSource>();
     }
 
 
@@ -104,11 +116,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            audiosource.PlayOneShot(AudioJump);
         }
 
         if (Input.GetKeyDown(KeyCode.X) && canDash && onGround)
         {
             StartCoroutine(Dash());
+            audiosource.PlayOneShot(AudioDash);
         }
 
         if(!onGround && onWall && inputX !=0)
@@ -128,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Attack") && attackCooldown <= 0 && onGround)
         {
             StartCoroutine(Freeze());
+            audiosource.PlayOneShot(AudioAttack);
             Hit();
             attackCooldown = timeBetweenAttack;
         }

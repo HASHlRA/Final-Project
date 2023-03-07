@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
 
     private float distancePlayer;
 
+    [SerializeField] private SimpleFlash flasheffect;
 
     [Header("Attack")]
 
@@ -29,12 +30,21 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private float attackDamage;
 
+    // Audio
+
+    private AudioSource audiosource;
+
+    [SerializeField] private AudioClip AudioDamaged;
+    [SerializeField] private AudioClip AudioAttack;
+
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        audiosource = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -52,8 +62,10 @@ public class Enemy : MonoBehaviour
     public void GetDamage(float damage)
     {
         health -= damage;
+        flasheffect.Flash();
+        audiosource.PlayOneShot(AudioDamaged);
 
-        if(health <= 0)
+        if (health <= 0)
         {
             GameObject.FindGameObjectWithTag("Puerta").GetComponent<GoToScene>().EnemyDestroyed();
             Death();
@@ -86,6 +98,8 @@ public class Enemy : MonoBehaviour
 
     public void Attack()
     {
+        audiosource.PlayOneShot(AudioAttack);
+
         attack = true;
 
         StartCoroutine(Freeze());

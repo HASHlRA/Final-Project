@@ -5,15 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    [SerializeField] public float life;
+
+    private HealthBar healthBar;
+
+    private void Start()
+    {
+        healthBar.StartHealthBar(life);
+    }
+
     public void Play()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        healthBar.StartHealthBar(life);
     }
 
     public void Exit()
     {
-        Debug.Log("Exit...");
         Application.Quit();
     }
 }
