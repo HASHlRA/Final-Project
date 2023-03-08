@@ -14,12 +14,16 @@ public class GameOver : MonoBehaviour
 
     [SerializeField]private GameObject barraVida;
 
+    private AudioSource audiosource;
+
+    [SerializeField] private AudioClip GameOverAudio;
 
 
     private void Start()
     {
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         playerHealth.PlayerDeath += EnableMenu;
+        audiosource = GetComponent<AudioSource>();
     }
 
     private void EnableMenu(object sender, EventArgs e)
@@ -27,6 +31,7 @@ public class GameOver : MonoBehaviour
         gameoverMenu.SetActive(true);
         healthBar.SetActive(false);
         barraVida.SetActive(false);
+        audiosource.PlayOneShot(GameOverAudio);
     }
 
     public void Restart(string name)

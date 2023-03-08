@@ -62,7 +62,7 @@ public class Pause : MonoBehaviour
     public void Restart()
     {
         gamePaused = false;
-        pauseButton.SetActive(false);
+        pauseButton.SetActive(true);
         menuPause.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName1);

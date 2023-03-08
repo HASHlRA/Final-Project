@@ -42,6 +42,7 @@ public class Boss : MonoBehaviour
 
     [SerializeField] private AudioClip AudioDamaged;
     [SerializeField] private AudioClip AudioAttack;
+    [SerializeField] private AudioClip AudioApparition;
 
     private void Start()
     {
@@ -50,6 +51,7 @@ public class Boss : MonoBehaviour
         healthBar.StartHealthBar(health);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         audiosource = GetComponent<AudioSource>();
+        audiosource.PlayOneShot(AudioApparition);
     }
 
 
@@ -84,7 +86,7 @@ public class Boss : MonoBehaviour
 
     private IEnumerator GoNextScene()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);
     }
 

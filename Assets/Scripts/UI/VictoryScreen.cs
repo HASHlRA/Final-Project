@@ -9,6 +9,16 @@ public class VictoryScreen : MonoBehaviour
 
     public string sceneName1;
 
+    private AudioSource audiosource;
+
+    [SerializeField] private AudioClip VictoryAudio;
+
+    public void Start()
+    {
+        audiosource = GetComponent<AudioSource>();
+        audiosource.PlayOneShot(VictoryAudio);
+    }
+
     public void Restart()
     {
         Time.timeScale = 1f;
