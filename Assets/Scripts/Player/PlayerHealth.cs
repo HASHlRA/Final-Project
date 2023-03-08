@@ -39,7 +39,8 @@ public class PlayerHealth : MonoBehaviour
         {
             PlayerDeath?.Invoke(this, EventArgs.Empty);
             //Destroy(gameObject);
-            Time.timeScale = 0f;
+            SetMaxHealth();
+            
         }
     }
 

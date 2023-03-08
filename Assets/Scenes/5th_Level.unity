@@ -1839,9 +1839,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameoverMenu: {fileID: 1206171690}
-  healthBar: {fileID: 7047979133838073925}
+  healthBar: {fileID: 728258888}
   barraVida: {fileID: 728258888}
-  GameOverAudio: {fileID: 0}
+  GameOverAudio: {fileID: 8300000, guid: 9ffbeda4b0db07f49a96c99b45e8a1ec, type: 3}
 --- !u!1 &1006591922
 GameObject:
   m_ObjectHideFlags: 0
@@ -5947,10 +5947,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7047979133483153679, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047979133483153679, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047979133483153679, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047979133483153679, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047979133483153679, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047979133483153679, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047979133483153679, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047979133483153679, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
---- !u!1 &7047979133838073925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7047979133272056045, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
-  m_PrefabInstance: {fileID: 7047979133838073924}
-  m_PrefabAsset: {fileID: 0}

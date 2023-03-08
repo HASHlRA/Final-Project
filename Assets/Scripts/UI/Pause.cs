@@ -26,6 +26,7 @@ public class Pause : MonoBehaviour
         GameObject.Find("Player").transform.position = startpoint.position;
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         playerHealth.SetMaxHealth();
+        Time.timeScale = 1f;
     }
 
 

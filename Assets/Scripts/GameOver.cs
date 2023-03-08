@@ -32,6 +32,7 @@ public class GameOver : MonoBehaviour
         healthBar.SetActive(false);
         barraVida.SetActive(false);
         audiosource.PlayOneShot(GameOverAudio);
+        Time.timeScale = 0f;
     }
 
     public void Restart(string name)
