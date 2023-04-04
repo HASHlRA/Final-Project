@@ -30,6 +30,10 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private float attackDamage;
 
+    public HealthbarBehavior Healthbar;
+    public float Hitpoints;
+    public float MaxHitpoints;
+
     // Audio
 
     private AudioSource audiosource;
@@ -38,12 +42,19 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AudioClip AudioAttack;
 
 
+
+
+
     private void Start()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         audiosource = GetComponent<AudioSource>();
+        Healthbar.SetHealth(Hitpoints, MaxHitpoints);
+        Hitpoints = MaxHitpoints;
+        
+
 
     }
 
@@ -61,11 +72,12 @@ public class Enemy : MonoBehaviour
 
     public void GetDamage(float damage)
     {
-        health -= damage;
+        Hitpoints -= damage;
+        Healthbar.SetHealth(Hitpoints, MaxHitpoints);
         flasheffect.Flash();
         audiosource.PlayOneShot(AudioDamaged);
 
-        if (health <= 0)
+        if (Hitpoints <= 0)
         {
             GameObject.FindGameObjectWithTag("Puerta").GetComponent<GoToScene>().EnemyDestroyed();
             Death();
