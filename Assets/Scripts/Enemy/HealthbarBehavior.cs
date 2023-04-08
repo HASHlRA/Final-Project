@@ -9,7 +9,6 @@ public class HealthbarBehavior : MonoBehaviour
     public Color Low;
     public Color High;
     public Vector3 Offset;
-    public GameObject Background;
 
 
     public void SetHealth(float health, float maxHealth)
