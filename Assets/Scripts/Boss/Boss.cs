@@ -42,6 +42,7 @@ public class Boss : MonoBehaviour
 
     [SerializeField] private AudioClip AudioDamaged;
     [SerializeField] private AudioClip AudioAttack;
+    [SerializeField] private AudioClip AudioAttack2;
     [SerializeField] private AudioClip AudioApparition;
 
     private void Start()
@@ -86,7 +87,7 @@ public class Boss : MonoBehaviour
 
     private IEnumerator GoNextScene()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(sceneName);
     }
 
@@ -120,12 +121,17 @@ public class Boss : MonoBehaviour
         }
     }
 
-    private IEnumerator AttackCooldown()
+    public void AttackAudio()
+    {
+        audiosource.PlayOneShot(AudioAttack2);
+    }
+
+    IEnumerator AttackCooldown()
     {
 
         rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 
