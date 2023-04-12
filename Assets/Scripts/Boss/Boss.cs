@@ -122,9 +122,15 @@ public class Boss : MonoBehaviour
 
     private IEnumerator AttackCooldown()
     {
-        
-        yield return new WaitForSeconds(0.5f);
+
+        rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        yield return new WaitForSeconds(1.5f);
+
+        rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
+
         attack = false;
+
     }
 
     private void OnDrawGizmos()
