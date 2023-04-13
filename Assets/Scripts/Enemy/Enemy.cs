@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,18 +52,15 @@ public class Enemy : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         audiosource = GetComponent<AudioSource>();
-        Healthbar.SetHealth(Hitpoints, MaxHitpoints);
         Hitpoints = MaxHitpoints;
-        
-
-
+        Healthbar.SetHealth(Hitpoints, MaxHitpoints);
     }
 
     private void Update()
     {
         distancePlayer = Vector2.Distance(transform.position, player.position);
         
-        LookPlayer();
+        LookPlayer(true);
     }
 
     private void LateUpdate()
@@ -99,7 +97,7 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void LookPlayer()
+    public void LookPlayer(object Player)
     {
         if (((player.position.x > transform.position.x && !lookingRight) || (player.position.x < transform.position.x && lookingRight)) && !dead && !attack)
         {
@@ -118,6 +116,9 @@ public class Enemy : MonoBehaviour
 
         Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
 
+        LookPlayer(null);
+
+
         foreach (Collider2D collision in objects)
         {
             if (collision.CompareTag("Player"))
@@ -126,6 +127,7 @@ public class Enemy : MonoBehaviour
             }
         }
     }
+
 
     IEnumerator Freeze()
     {
@@ -136,6 +138,7 @@ public class Enemy : MonoBehaviour
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 
         attack = false;
+
 
     }
 

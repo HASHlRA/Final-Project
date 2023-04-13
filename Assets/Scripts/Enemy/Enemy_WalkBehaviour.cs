@@ -18,7 +18,7 @@ public class Enemy_WalkBehaviour : StateMachineBehaviour
         enemy = animator.GetComponent<Enemy>();
         rb2D = enemy.rb2D;
 
-        enemy.LookPlayer();
+        enemy.LookPlayer(true);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

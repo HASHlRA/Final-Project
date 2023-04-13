@@ -1,0 +1,3445 @@
+fileFormatVersion: 2
+guid: 38437a9b4a9393e458af65c49dd0e954
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1664
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02441132c9879104982f88ec3d12c094
+      internalID: -1013955694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1664
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0714079829c6e468b6ba470c874648
+      internalID: 114138753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_2
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1664
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1008d92d685653c4f900fe6515d7ae7a
+      internalID: -1468613375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_3
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1664
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dafe5d8324196348ae3bde3bb18be76
+      internalID: -836174586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_4
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1664
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922b3bbac74c2a2409a697550ecba2e3
+      internalID: -1352010399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_5
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1664
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8b52e3687560e44b617cfc548649cc
+      internalID: 1098048763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1536
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539f3ca2a61f33e4098f9bb532e504a7
+      internalID: -832767264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1536
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd63575dd7d35cf439c2d03e017b02cb
+      internalID: -869789627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_8
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1536
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23dd3783d896c7845a9fb49ca25c169f
+      internalID: -1155317172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_9
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1536
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a485569c9b149d24badfb22aa8c4b4ef
+      internalID: -1454791794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_10
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1536
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63889ed5e0605604fa81d5a18303ee0f
+      internalID: 214573163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_11
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1536
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380bfd6660cd18f4186fe7783a813d0c
+      internalID: 1402952223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_12
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 1536
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd28311d74667b4bb9236dcbdf4401b
+      internalID: -179824201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_13
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 1536
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71753da35f9e2e4d99f4c0c00905eb3
+      internalID: -1124267751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1408
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2639ea6cf093cf4087a51b32d46314d
+      internalID: -1764213796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1408
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f9ab7c8edc9d547b80ffe47c1bf20c
+      internalID: 2042917699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_16
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1408
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a5cf1c8588c8f4ba410961e7982f20
+      internalID: 1409309871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1280
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abf66e67c45250429e36542deae4e8a
+      internalID: 18837483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_18
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1280
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a660e60be7e573947a70b08ed3b88c8d
+      internalID: 1785270770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_19
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1280
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff315302cc575e419640a929b9e345c
+      internalID: 1827743006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1152
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575d56094795e3c4d9f6e73be319a564
+      internalID: -295489902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7248c5adc2e7ae742ac938e8be0e6cb2
+      internalID: 1870000606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_22
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1152
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f248ff1a868fdd34c98cf0606b9abf7a
+      internalID: -593547839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_23
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1152
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09b49adc20c607478e60b846a68ce7e
+      internalID: 554161723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_24
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1152
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7322c44dc9236284382af0533e07750c
+      internalID: -501437653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_25
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1152
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b919b8106c4f7b647994fb382ae43b3b
+      internalID: -1077319160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_26
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 1152
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bc1ad919e48564195ce38f8e202816
+      internalID: 1008463537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1024
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f782d0cae0376144b12e17b20d59387
+      internalID: 960020487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1024
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07f1663b89eca54fabd5508dca4a09b
+      internalID: 888741138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_29
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1024
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fb2af81eeb97744a9646e183ddaef0
+      internalID: -1210657319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_30
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1024
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4e4e4494bb69041bc8dca1e5629464
+      internalID: 455713255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_31
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1024
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3b15679e3dcb24dbb1b586fdd65a8f
+      internalID: -718345513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_32
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1024
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6df8b0277aa7d459aa1904adae71c1
+      internalID: 1963440007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4524cd0220e908949b2fb86fd8419277
+      internalID: 1858530758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a9d0d7516d2c0459430758120edb11
+      internalID: 1524769760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_35
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91aa520761590054a89c15729bde6f6f
+      internalID: -324225120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_36
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acab35b2600d7b40ab96ebf3c06d6b2
+      internalID: 174227569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_37
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefc5693c82f7f24f99f2747362a0cd9
+      internalID: 426091414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_38
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53207e6e652ae24db415c33a1bceb83
+      internalID: -43037653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_39
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bc95fdfdc19f347990adb240ff9867
+      internalID: 706672801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_40
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8c06d9e0fac0540b49ea0e6c20d13e
+      internalID: 2094614636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_41
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaade60ea5ad15458691f100e697471
+      internalID: 1045327187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_42
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bbcf6932217bd438418efd97dcf51f
+      internalID: -1871480466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_43
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae9c2c022be7b44f92e0de5a27f8a78
+      internalID: 1078603384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_44
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 896
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1a78679e38fa0409707a61ce452193
+      internalID: -1220660097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_45
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dea48f1fd7767c47b4d877ab79afe7b
+      internalID: -1236582542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379e9d3556f9fb84fa0f5052d5206648
+      internalID: 1288120380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_47
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdde7f16ef46eb04685e67c4d6a55a1c
+      internalID: 1230873326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_48
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51293eb643a07254aae402786066a80e
+      internalID: -825288887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_49
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cbd159160fadd4c99c5f0c9b3d4194
+      internalID: 1254733280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_50
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f509bdd5cfb4554abd7f96564b8db11
+      internalID: -1545651987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_51
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde38af56829d6c4f94d528caf629f65
+      internalID: -150721082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_52
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc8cfa90af181e4aa2858458c7332c3
+      internalID: 1750303717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_53
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f194526283574d448979b3c426805437
+      internalID: -935354839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_54
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4344f44cadd0c694384ac62f4235f340
+      internalID: 1042668549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_55
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112ab0c5b3bd6844a9cfc365b970541b
+      internalID: 1548195775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_56
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668227b69dfc462499dc527aabc3880b
+      internalID: -114877488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_57
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bb49aca72c4094b94715b1c65e1555
+      internalID: 223926512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_58
+      rect:
+        serializedVersion: 2
+        x: 3792
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d64d8a1d926ac346b6a9790713b85c3
+      internalID: 1211799871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_59
+      rect:
+        serializedVersion: 2
+        x: 4076
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c473696baf53bbb46a834af8a43c9d67
+      internalID: -1052498462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_60
+      rect:
+        serializedVersion: 2
+        x: 4360
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422e4b5a8773e164d9a50a65ae7cadae
+      internalID: 1777273543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_61
+      rect:
+        serializedVersion: 2
+        x: 4644
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4009d53c1ebb2488f8e03ecd4db8bc
+      internalID: 1470011791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_62
+      rect:
+        serializedVersion: 2
+        x: 4928
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a3e2561feb06b488e91021e09c367e
+      internalID: -1281371277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_63
+      rect:
+        serializedVersion: 2
+        x: 5212
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411ce43fb91739a4dabf1cbcac717e9c
+      internalID: -1669696532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_64
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64534a04abf4184c98b3724799ab5b9
+      internalID: 713778685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_65
+      rect:
+        serializedVersion: 2
+        x: 5780
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8238448c77f024880f1a08fcc9f0b7
+      internalID: 1021898551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_66
+      rect:
+        serializedVersion: 2
+        x: 6064
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4526bebb744b7294dbdca5fde723db86
+      internalID: -557570260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_67
+      rect:
+        serializedVersion: 2
+        x: 6348
+        y: 768
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48500c9c19bf6554482e88f6d2fda2d9
+      internalID: 1331063564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_68
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6e5d1387666024eaf1de0dbd1fbe9f
+      internalID: -170197353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_69
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5584e8dc614b444c8439af76495c665
+      internalID: 2124795920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_70
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5846437cb4860d4691594d2eb322a58
+      internalID: -929793302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_71
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1488accf068c654b9216b71d79a758d
+      internalID: -1916080623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_72
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c56c0d0065d254ea9c94f19dd06a12
+      internalID: 809754607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_73
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbf2d6d371bb954b9567e8798021d31
+      internalID: -1871721075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_74
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521b9f63c0c71334e981ede14f4bac62
+      internalID: 1538553311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_75
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953718607fbc48e4d8fc7329129e2abb
+      internalID: -257524806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_76
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da04e1cc07c9d734eacff8c4ed80693d
+      internalID: -1995688431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_77
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1461446ad27d9fd4c81d97a8d59ee703
+      internalID: -1713885279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_78
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571a571826ad592419d820aa79f4507e
+      internalID: 1779151673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_79
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725d7bdbc2bbc424d9ad63449baa3842
+      internalID: -342157753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_80
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb38e6b3b67cff47b742d81ed4dfa1d
+      internalID: 982513916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_81
+      rect:
+        serializedVersion: 2
+        x: 3792
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebf6ed3edd29fa499c03d89e63c585b
+      internalID: 471410997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_82
+      rect:
+        serializedVersion: 2
+        x: 4076
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea665f4a304c0a24394d986fef0c55ad
+      internalID: 1195426084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_83
+      rect:
+        serializedVersion: 2
+        x: 4360
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e666fa5dd4ea564c8fbe0223fe96bea
+      internalID: -299915289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_84
+      rect:
+        serializedVersion: 2
+        x: 4644
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6e54d0b28b8974c842819ec9d9d90c
+      internalID: -1229108313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_85
+      rect:
+        serializedVersion: 2
+        x: 4928
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac705699963bdc40b5a044fa2d278c3
+      internalID: -423113260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_86
+      rect:
+        serializedVersion: 2
+        x: 5212
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12191efee96cb8d42bbd12bebc1d1a11
+      internalID: -602173270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_87
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a271fde11ece84ebb91fbcd135e1dd
+      internalID: 1346063965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_88
+      rect:
+        serializedVersion: 2
+        x: 5780
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e63f8c85becf48428f9137a94820d47
+      internalID: -1449747449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_89
+      rect:
+        serializedVersion: 2
+        x: 6064
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270b0091351d2f6498b7e840638cf3ed
+      internalID: 853283178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_90
+      rect:
+        serializedVersion: 2
+        x: 6348
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f2e9ece77565b43aef8e5edc37c499
+      internalID: -1274866705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_91
+      rect:
+        serializedVersion: 2
+        x: 6632
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf0cc9b94441754c9f0d712e288b33a
+      internalID: 1770885236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_92
+      rect:
+        serializedVersion: 2
+        x: 6916
+        y: 640
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33071972f73e2c7429dcbbe171095eeb
+      internalID: 61571589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_93
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d1c32798131e74fb342a26c2fe2bac
+      internalID: 1646971281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_94
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f9046565813264eb8a63e3a2aac197
+      internalID: 1679993785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_95
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf66699e4d5e434db253292db4835da
+      internalID: 1829667440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_96
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84239abc15e159e40a0220f12c257362
+      internalID: 1217598851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_97
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1514730bf44ee7340b3ed09313151fe4
+      internalID: -778464925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_98
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942e840f3c7956f409b46c77b95b4746
+      internalID: 477478541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_99
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7742210cb0e7f4a9df486887ccb930
+      internalID: -1290699838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_100
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279552497dbbaac4894697da4d1fd472
+      internalID: 711103929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_101
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9a4b698db68dc478f30a5d3253b808
+      internalID: -1699275606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_102
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d084af5a347e8a4ab06af21fe052e11
+      internalID: -1493212610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_103
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2925e55e4c05ef48a8c92f6ab9f0422
+      internalID: -866536128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_104
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d80b57a1fb8edf47a09e81c46fb8eb3
+      internalID: 2013040241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_105
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620fa2b177d680549ba80ef5a61167bb
+      internalID: 1867706790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_106
+      rect:
+        serializedVersion: 2
+        x: 3792
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4e8bb5044f43b4a9c0801b7b281c06
+      internalID: 972018646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_107
+      rect:
+        serializedVersion: 2
+        x: 4076
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6746bc8a1af7f3408e9b61c0f0fd161
+      internalID: 199437084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_108
+      rect:
+        serializedVersion: 2
+        x: 4360
+        y: 512
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa0da953df688849acc37652e5c95f3
+      internalID: -902734683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_109
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 384
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e06ddf0dfabe84f93662c5066ed7a9
+      internalID: -382362850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_110
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2121a142e9641a0499985b0c3f252f99
+      internalID: 412510762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_111
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 384
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b64f52b9fe3064eb917ca595457a7d
+      internalID: 1085215822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_112
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 384
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d076cd65db57840a20b9159580e878
+      internalID: 552206929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_113
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 384
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79736b898393534286b8264d6443ea9
+      internalID: 131812788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_114
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 384
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29674f130994d06419dd66893046a41e
+      internalID: 1679315780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_115
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045b8a5cd3ac2404a8cdf747b65dcc84
+      internalID: 1487653596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_116
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dddb2823637c7243adac0c8a8288f71
+      internalID: -823485448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_117
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a65abb50831ab444b4199db14c22e75
+      internalID: 1814076751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_118
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87e7a8792849c543b4a33ed0288390f
+      internalID: -1745765812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_119
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3239696ed5d5684418e255c0555df484
+      internalID: 1575817314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_120
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db0cf2ffe9fbf3448cc55f1d1b520b0
+      internalID: -1500463780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_121
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858eb12cb0d2cd54a8bb07c8e299276b
+      internalID: 546987927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_122
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b9ebe39ddbc1848b4b4dce2d54c95a
+      internalID: -307682377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_123
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806191ffca7d14545b9a38383ee4df5f
+      internalID: 149610286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_124
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d189bb149c6a4145b943bb1617aebeb
+      internalID: -250900061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_125
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb35de5ca7402de4bb3c9d1c34c535a1
+      internalID: 630109425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_126
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d9d0287cd3c5d46a9f0e7efe01c6eb
+      internalID: -1014413087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_127
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 256
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224c3f3ed8ed78f4c9ae6660084b91b7
+      internalID: 346097387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_128
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 128
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafffbb83217a604d9b33d17dce87f62
+      internalID: -1238340236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52748150d379b414785d76f8295e9253
+      internalID: -471333059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_130
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 128
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb5c8f637f093547b268fe4b9f8bafd
+      internalID: 199908879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_131
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 128
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0058d72633087c949ba8f43210e127d3
+      internalID: -2132462121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_132
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 128
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6347edb4d593246878fcad9b0bc755
+      internalID: -169200368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_133
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 128
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce68a777f44c8e245b98bd114de3f8c2
+      internalID: 372178798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_134
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65b4f8b46b9f8d4a997c260a3f1ac00
+      internalID: -1787849161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_135
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ec3b8585d2c2c438fd980faf09fd37
+      internalID: -1744008325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_136
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfe80473b24ddc4483666a72db4bda2
+      internalID: 319085495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_137
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c98e6c8c84bcb40bff1cfd4639c8b9
+      internalID: -1064170666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_138
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0588a121fb7ff3540a21602d8d5d40ae
+      internalID: -149297217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_139
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbec5d42dcaefe645af5c16db7e31e56
+      internalID: 29283224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_140
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0144ed80d910f9f45b70a3b9c2d5f99f
+      internalID: 971345152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_141
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc00c939a11eda14fa2e6c2a2df44e03
+      internalID: 419477424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_142
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbba7d39c9ba3ef4489bc448bd9da557
+      internalID: 506771936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_143
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f7afb2c2d3fe74da20c06ffc54fb81
+      internalID: 2062175841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_144
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8167afceef1b86c45b4a3587e5ea9a56
+      internalID: 1091119265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_145
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6389a8e0a6ace0842ad340aa3d0f79fb
+      internalID: 981128957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_146
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72fafc9e098a4447bd99e0b049af9ba
+      internalID: 712539839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_147
+      rect:
+        serializedVersion: 2
+        x: 3792
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61c7e71ee29c084ea5f2a7db8ff55e3
+      internalID: 1107024513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_148
+      rect:
+        serializedVersion: 2
+        x: 4076
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56aad28e1e7fe3f4db3b3958dde823ee
+      internalID: 528497028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_149
+      rect:
+        serializedVersion: 2
+        x: 4360
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c5e82d38cf88a4b9ae75625ee1bbc8
+      internalID: 167905639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_monk_FREE_v1.3-SpriteSheet_288x128_150
+      rect:
+        serializedVersion: 2
+        x: 4644
+        y: 0
+        width: 214
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b945d26ece41a549ab35b101bff4896
+      internalID: -2140704120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_76: -1995688431
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_99: -1290699838
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_128: -1238340236
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_145: 981128957
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_41: 1045327187
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_87: 1346063965
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_74: 1538553311
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_100: 711103929
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_0: -1013955694
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_24: -501437653
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_91: 1770885236
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_51: -150721082
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_109: -382362850
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_149: 167905639
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_23: 554161723
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_30: 455713255
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_78: 1779151673
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_54: 1042668549
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_5: 1098048763
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_127: 346097387
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_85: -423113260
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_90: -1274866705
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_53: -935354839
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_55: 1548195775
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_6: -832767264
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_19: 1827743006
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_50: -1545651987
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_131: -2132462121
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_94: 1679993785
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_67: 1331063564
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_96: 1217598851
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_93: 1646971281
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_48: -825288887
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_105: 1867706790
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_17: 18837483
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_72: 809754607
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_136: 319085495
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_120: -1500463780
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_148: 528497028
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_16: 1409309871
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_98: 477478541
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_40: 2094614636
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_61: 1470011791
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_133: 372178798
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_102: -1493212610
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_47: 1230873326
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_71: -1916080623
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_28: 888741138
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_25: -1077319160
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_7: -869789627
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_57: 223926512
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_80: 982513916
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_9: -1454791794
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_3: -836174586
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_113: 131812788
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_124: -250900061
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_107: 199437084
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_39: 706672801
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_15: 2042917699
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_26: 1008463537
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_11: 1402952223
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_137: -1064170666
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_138: -149297217
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_38: -43037653
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_97: -778464925
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_104: 2013040241
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_37: 426091414
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_84: -1229108313
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_115: 1487653596
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_18: 1785270770
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_144: 1091119265
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_103: -866536128
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_12: -179824201
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_142: 506771936
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_65: 1021898551
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_140: 971345152
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_1: 114138753
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_132: -169200368
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_134: -1787849161
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_32: 1963440007
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_46: 1288120380
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_108: -902734683
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_122: -307682377
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_59: -1052498462
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_86: -602173270
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_69: 2124795920
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_126: -1014413087
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_27: 960020487
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_141: 419477424
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_119: 1575817314
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_125: 630109425
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_88: -1449747449
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_95: 1829667440
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_33: 1858530758
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_146: 712539839
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_73: -1871721075
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_42: -1871480466
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_79: -342157753
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_147: 1107024513
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_13: -1124267751
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_29: -1210657319
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_20: -295489902
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_75: -257524806
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_35: -324225120
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_101: -1699275606
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_130: 199908879
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_106: 972018646
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_21: 1870000606
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_121: 546987927
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_114: 1679315780
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_66: -557570260
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_123: 149610286
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_70: -929793302
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_8: -1155317172
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_116: -823485448
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_118: -1745765812
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_34: 1524769760
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_68: -170197353
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_45: -1236582542
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_49: 1254733280
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_56: -114877488
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_62: -1281371277
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_2: -1468613375
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_60: 1777273543
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_58: 1211799871
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_44: -1220660097
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_143: 2062175841
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_14: -1764213796
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_77: -1713885279
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_150: -2140704120
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_111: 1085215822
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_110: 412510762
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_83: -299915289
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_64: 713778685
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_22: -593547839
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_52: 1750303717
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_129: -471333059
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_36: 174227569
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_89: 853283178
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_112: 552206929
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_63: -1669696532
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_10: 214573163
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_135: -1744008325
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_4: -1352010399
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_43: 1078603384
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_139: 29283224
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_92: 61571589
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_31: -718345513
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_81: 471410997
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_117: 1814076751
+      ground_monk_FREE_v1.3-SpriteSheet_288x128_82: 1195426084
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

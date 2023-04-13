@@ -17,8 +17,7 @@ public class Boss_WalkBehaviour : StateMachineBehaviour
     {
         boss = animator.GetComponent<Boss>();
         rb2D = boss.rb2D;
-
-        boss.LookPlayer();
+        boss.LookPlayer(true);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

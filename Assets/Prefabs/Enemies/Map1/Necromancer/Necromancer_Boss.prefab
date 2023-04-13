@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6400814931955011193
 Transform:
   m_ObjectHideFlags: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   lookingRight: 1
   health: 300
   healthBar: {fileID: 0}
-  attackController: {fileID: 6400814932215583660}
+  attackController: {fileID: 0}
   attackRadius: 1.4
   attackDamage: 20
   attack: 0

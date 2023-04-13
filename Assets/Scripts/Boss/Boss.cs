@@ -53,6 +53,7 @@ public class Boss : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         audiosource = GetComponent<AudioSource>();
         audiosource.PlayOneShot(AudioApparition);
+        LookPlayer(true);
     }
 
 
@@ -60,7 +61,7 @@ public class Boss : MonoBehaviour
     {
         float distancePlayer = Vector2.Distance(transform.position, player.position);
         animator.SetFloat("distancePlayer", distancePlayer);
-        LookPlayer();
+        //LookPlayer();
     }
 
 
@@ -92,7 +93,7 @@ public class Boss : MonoBehaviour
     }
 
 
-    public void LookPlayer()
+    public void LookPlayer(object Player)
     {
         if ((player.position.x > transform.position.x && !lookingRight) || (player.position.x < transform.position.x && lookingRight) &&!attack)
         {
@@ -131,9 +132,10 @@ public class Boss : MonoBehaviour
 
         rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
+
 
         attack = false;
 

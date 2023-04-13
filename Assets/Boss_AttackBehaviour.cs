@@ -2,30 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss_SpellBehaviour : StateMachineBehaviour
+public class Boss_AttackBehaviour : StateMachineBehaviour
 {
-
-    [SerializeField] private GameObject spell;
-
-    [SerializeField] private float offsetY;
-
     private Boss boss;
-
-    private Transform player;
-
+    private Rigidbody2D rb2D;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         boss = animator.GetComponent<Boss>();
-
-        player = boss.player;
-
-        Vector2 positionSpell = new Vector2(player.position.x, player.position.y + offsetY);
-
-        Instantiate(spell, positionSpell, Quaternion.identity);
-
-        boss.LookPlayer(true);
+        boss.LookPlayer(null);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -35,10 +21,10 @@ public class Boss_SpellBehaviour : StateMachineBehaviour
     //}
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        boss.LookPlayer(true);
+    }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
