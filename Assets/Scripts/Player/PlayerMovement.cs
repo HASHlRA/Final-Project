@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private float inputX;
     private float horizontalMovement = 0f;
     [SerializeField] private float velocityMovement;
-    [Range (0, 0.3f)] [SerializeField] private float smoothness;
+    [Range(0, 0.3f)] [SerializeField] private float smoothness;
     private Vector3 velocity = Vector3.zero;
     private bool right = true;
 
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Animation")]
 
-    private Animator animator;
+    public Animator animator;
 
 
 
@@ -78,6 +78,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float attackCooldown;
 
+    public bool isAttacking = false;
+
+    public static PlayerMovement instance;
 
     private GameObject nearest;
 
@@ -90,7 +93,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip AudioJump;
     [SerializeField] private AudioClip AudioDash;
 
-
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -106,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         inputX = Input.GetAxisRaw("Horizontal");
-        horizontalMovement =  inputX * velocityMovement;
+        horizontalMovement = inputX * velocityMovement;
 
         animator.SetFloat("Horizontal", Mathf.Abs(horizontalMovement));
         animator.SetFloat("VelocityY", rb2D.velocity.y);
@@ -125,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
             audiosource.PlayOneShot(AudioDash);
         }
 
-        if(!onGround && onWall && inputX !=0)
+        if (!onGround && onWall && inputX != 0)
         {
             slide = true;
         }
@@ -139,11 +145,12 @@ public class PlayerMovement : MonoBehaviour
             attackCooldown -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Attack") && attackCooldown <= 0 && onGround)
+        if (Input.GetButtonDown("Attack") && !isAttacking && attackCooldown <= 0 && onGround)
         {
+            isAttacking = true;
             StartCoroutine(Freeze());
             audiosource.PlayOneShot(AudioAttack);
-            Hit();
+            //Hit();
             attackCooldown = timeBetweenAttack;
         }
 
@@ -165,7 +172,7 @@ public class PlayerMovement : MonoBehaviour
 
         jump = false;
 
-        if(slide)
+        if (slide)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, Mathf.Clamp(rb2D.velocity.y, -slideVelocity, float.MaxValue));
         }
@@ -179,7 +186,7 @@ public class PlayerMovement : MonoBehaviour
             rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, objectVelocity, ref velocity, smoothness);
         }
 
-        
+
 
         if (move > 0 && !right)
         {
@@ -193,7 +200,7 @@ public class PlayerMovement : MonoBehaviour
             turn();
         }
 
-        if(jump2 && onGround && !slide)
+        if (jump2 && onGround && !slide)
         {
             Jump();
         }
@@ -236,6 +243,11 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = scale;
     }
 
+    private void Freeze2()
+    {
+        StartCoroutine(Freeze());
+    }
+
 
     private IEnumerator Dash()
     {
@@ -268,7 +280,7 @@ public class PlayerMovement : MonoBehaviour
     private void Hit()
     {
 
-        animator.SetTrigger("Attack");
+        //animator.SetTrigger("Attack");
 
         Collider2D[] objects = Physics2D.OverlapCircleAll(hitController.position, hitbox);
 
@@ -302,7 +314,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2D.constraints = RigidbodyConstraints2D.FreezePosition;
 
-        yield return new WaitForSecondsRealtime(0.55f);
+        yield return new WaitForSecondsRealtime(0.7f);
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 
