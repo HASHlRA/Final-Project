@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2242817139556554035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.51638544, y: -2.0053806, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2242817140756057504}
@@ -274,10 +274,10 @@ MonoBehaviour:
   flasheffect: {fileID: 2242817139556554030}
   attackController: {fileID: 2242817140756057504}
   attackRadius: 0.75
-  attackDamage: 15
+  attackDamage: 20
   Healthbar: {fileID: 5114696926982240292}
   Hitpoints: 0
-  MaxHitpoints: 120
+  MaxHitpoints: 150
   AudioDamaged: {fileID: 8300000, guid: 33692cb6ed6b92043b37bddfef997c03, type: 3}
   AudioAttack: {fileID: 8300000, guid: 05be432db8aac5f409310b4a268b1612, type: 3}
 --- !u!114 &2242817139556554030

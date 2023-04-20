@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 2727443097393023214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.95, y: -1.57, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: -1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2727443095698359140}
@@ -204,11 +204,11 @@ MonoBehaviour:
   rb2D: {fileID: 2727443097393023190}
   player: {fileID: 0}
   lookingRight: 1
-  health: 200
+  health: 900
   healthBar: {fileID: 0}
   attackController: {fileID: 2727443095698359140}
   attackRadius: 1
-  attackDamage: 10
+  attackDamage: 25
   attack: 0
   sceneName: Victory_Screen
   flashEffect: {fileID: -984838323174581190}

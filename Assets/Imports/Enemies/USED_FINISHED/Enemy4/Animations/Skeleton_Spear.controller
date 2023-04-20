@@ -114,7 +114,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: distancePlayer
-    m_EventTreshold: 8
+    m_EventTreshold: 6
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6664489659961194241}
   m_Solo: 0
@@ -173,7 +173,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: distancePlayer
-    m_EventTreshold: 1.5
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1627546402469219849}
   m_Solo: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869e5ee5cebd5714b8cbfb78063782e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityMovement: 4
+  velocityMovement: 3
 --- !u!1107 &4681359787430421284
 AnimatorStateMachine:
   serializedVersion: 6

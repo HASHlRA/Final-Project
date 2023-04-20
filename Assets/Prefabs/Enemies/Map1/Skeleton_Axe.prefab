@@ -178,10 +178,10 @@ MonoBehaviour:
   flasheffect: {fileID: 217760095250164078}
   attackController: {fileID: 217760096403680484}
   attackRadius: 0.75
-  attackDamage: 20
+  attackDamage: 25
   Healthbar: {fileID: 6474799193948304520}
   Hitpoints: 0
-  MaxHitpoints: 80
+  MaxHitpoints: 150
   AudioDamaged: {fileID: 8300000, guid: 33692cb6ed6b92043b37bddfef997c03, type: 3}
   AudioAttack: {fileID: 8300000, guid: 7df8fbf4587174e42800ad8f88524a28, type: 3}
 --- !u!114 &217760095250164078

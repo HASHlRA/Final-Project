@@ -180,7 +180,7 @@ Animator:
   m_GameObject: {fileID: 8944852654559047006}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 853607c9315cd9f4490196432b47f276, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
   attackDamage: 10
   Healthbar: {fileID: 2736389321958583461}
   Hitpoints: 0
-  MaxHitpoints: 60
+  MaxHitpoints: 120
   AudioDamaged: {fileID: 8300000, guid: 073b0b59704988a48a68d0302c563152, type: 3}
   AudioAttack: {fileID: 8300000, guid: d9a841bee16c2b245b94dfa696c3df04, type: 3}
 --- !u!1001 &8944852653950247795

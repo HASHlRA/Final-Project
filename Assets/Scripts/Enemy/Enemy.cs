@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private AudioClip AudioDamaged;
     [SerializeField] private AudioClip AudioAttack;
+    [SerializeField] private AudioClip AudioAttack2;
 
 
 
@@ -81,6 +82,11 @@ public class Enemy : MonoBehaviour
             Death();
             StartCoroutine(Destroy());
         }
+    }
+
+    public void AttackAudio()
+    {
+        audiosource.PlayOneShot(AudioAttack2);
     }
 
 
@@ -133,7 +139,7 @@ public class Enemy : MonoBehaviour
     {
         rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.75f);
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 

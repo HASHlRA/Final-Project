@@ -314,7 +314,7 @@ MonoBehaviour:
   rb2D: {fileID: 7720458908244530134}
   player: {fileID: 0}
   lookingRight: 1
-  health: 200
+  health: 800
   healthBar: {fileID: 0}
   attackController: {fileID: 7720458906581307646}
   attackRadius: 1

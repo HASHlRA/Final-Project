@@ -53,7 +53,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1310144837418611645
 Transform:
   m_ObjectHideFlags: 0
@@ -300,11 +300,11 @@ MonoBehaviour:
   rb2D: {fileID: 1310144837418611634}
   player: {fileID: 0}
   lookingRight: 1
-  health: 300
+  health: 900
   healthBar: {fileID: 0}
   attackController: {fileID: 1310144836437881918}
   attackRadius: 1.5
-  attackDamage: 20
+  attackDamage: 25
   attack: 0
   sceneName: Victory_Screen
   flashEffect: {fileID: 1310144837418611646}

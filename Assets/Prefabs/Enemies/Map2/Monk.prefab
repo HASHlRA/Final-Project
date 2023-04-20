@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 1416100308569078335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.14, y: -2.0536933, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1416100308376049609}
@@ -226,7 +226,7 @@ MonoBehaviour:
   attackDamage: 15
   Healthbar: {fileID: 5367697251087137664}
   Hitpoints: 0
-  MaxHitpoints: 100
+  MaxHitpoints: 120
   AudioDamaged: {fileID: 8300000, guid: 19af0114deb21234bae94cd3431500f1, type: 3}
   AudioAttack: {fileID: 8300000, guid: 30f939168d1f914449fc6727598d28b2, type: 3}
 --- !u!82 &1416100308569078720

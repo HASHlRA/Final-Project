@@ -181,7 +181,7 @@ MonoBehaviour:
   attackDamage: 20
   Healthbar: {fileID: 6474799194157285928}
   Hitpoints: 0
-  MaxHitpoints: 100
+  MaxHitpoints: 120
   AudioDamaged: {fileID: 8300000, guid: 33692cb6ed6b92043b37bddfef997c03, type: 3}
   AudioAttack: {fileID: 8300000, guid: 0d8aca659da0132458c7faa8215adf69, type: 3}
 --- !u!114 &8901452182383193438

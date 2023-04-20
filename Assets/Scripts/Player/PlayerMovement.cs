@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [Range(0, 0.3f)] [SerializeField] private float smoothness;
     private Vector3 velocity = Vector3.zero;
     private bool right = true;
+    private float lockPos = 0;
 
 
 
@@ -106,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
         initialGravity = rb2D.gravityScale;
         Enemy.FindObjectOfType<Enemy>();
         audiosource = GetComponent<AudioSource>();
+
     }
 
 
@@ -113,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
     {
         inputX = Input.GetAxisRaw("Horizontal");
         horizontalMovement = inputX * velocityMovement;
+        transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
 
         animator.SetFloat("Horizontal", Mathf.Abs(horizontalMovement));
         animator.SetFloat("VelocityY", rb2D.velocity.y);

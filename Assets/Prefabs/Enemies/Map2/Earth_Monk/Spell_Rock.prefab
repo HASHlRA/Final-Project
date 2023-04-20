@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89cfd2042debfca48b00e477489a4416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 25
   boxDimensions: {x: 2, y: 2}
   boxPosition: {fileID: 8327194892505944100}
   healthTime: 1.05

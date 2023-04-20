@@ -132,11 +132,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 4040441518770622214}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b6cc924ec832cd94baa472bf06bd0462, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.016290009, y: 0.24228942}
+  m_Offset: {x: -0.008111596, y: 0.24228942}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -147,7 +147,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0632623, y: 1.3491819}
+  m_Size: {x: 0.8833369, y: 1.3491819}
   m_EdgeRadius: 0
 --- !u!50 &4040441518770622235
 Rigidbody2D:
@@ -165,7 +165,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b6cc924ec832cd94baa472bf06bd0462, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -308,8 +308,8 @@ MonoBehaviour:
   attackDamage: 15
   Healthbar: {fileID: 7046325444145468234}
   Hitpoints: 0
-  MaxHitpoints: 80
-  AudioDamaged: {fileID: 8300000, guid: 56a95520e19fa4043a400be6964b2a1c, type: 3}
+  MaxHitpoints: 120
+  AudioDamaged: {fileID: 8300000, guid: e9b89891bab86d547b1ff78e7d5c7623, type: 3}
   AudioAttack: {fileID: 8300000, guid: 0d8aca659da0132458c7faa8215adf69, type: 3}
 --- !u!114 &4040441518770622215
 MonoBehaviour:
