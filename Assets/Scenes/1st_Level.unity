@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Demon
       objectReference: {fileID: 0}
+    - target: {fileID: 1310144837418611639, guid: edb7b91352acf4340896d0f7ecc4b2f0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1310144837418611645, guid: edb7b91352acf4340896d0f7ecc4b2f0, type: 3}
       propertyPath: m_RootOrder
       value: 1
