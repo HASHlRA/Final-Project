@@ -17,6 +17,7 @@ public class Player_Trans2 : StateMachineBehaviour
         {
             PlayerMovement.instance.animator.Play("Attack");
         }
+
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canDash = true;
 
-    private bool canMove = true;
+    public bool canMove = true;
 
 
 
@@ -245,7 +245,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Freeze2()
     {
-        StartCoroutine(Freeze());
+        canMove = false;
+    }
+
+    private void Unfreeze()
+    {
+        canMove = true;
     }
 
 
@@ -314,7 +319,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2D.constraints = RigidbodyConstraints2D.FreezePosition;
 
-        yield return new WaitForSecondsRealtime(0.7f);
+        yield return new WaitForSecondsRealtime(0.65f);
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 

@@ -336,6 +336,7 @@ MonoBehaviour:
   groundcontrol: {fileID: 2788314870612954722}
   boxdimensions: {x: 0.4, y: 0.2, z: 0}
   onGround: 0
+  animator: {fileID: 0}
   wallcontrol: {fileID: 2788314871633484104}
   wallboxdimensions: {x: 0.2, y: 0.95, z: 0}
   slide: 0
@@ -346,11 +347,13 @@ MonoBehaviour:
   dashVelocity: 6
   dashTime: 0.4
   trailRenderer: {fileID: 1048370607}
+  canMove: 1
   hitController: {fileID: 1767580698377037232}
   hitbox: 0.5
   damage: 20
-  timeBetweenAttack: 1
+  timeBetweenAttack: 0.3
   attackCooldown: 0
+  isAttacking: 0
   AudioAttack: {fileID: 8300000, guid: 1ecbf7356df0d444b98c4b84ac672637, type: 3}
   AudioJump: {fileID: 8300000, guid: 1035487548c52d94baba98fbf9630815, type: 3}
   AudioDash: {fileID: 8300000, guid: 92179f829f2ad7f4ba2a92f00a7870b2, type: 3}
@@ -364,7 +367,7 @@ Animator:
   m_GameObject: {fileID: 2788314870770278129}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9bca343e777b3cd4981fe12fd20e2a2e, type: 2}
+  m_Controller: {fileID: 9100000, guid: e93722d7a6abbc949ac22ba21b941dfd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
