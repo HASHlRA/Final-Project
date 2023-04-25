@@ -5,7 +5,20 @@ using System;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] public float life;
+    [SerializeField] private float life;
+
+    public float Life
+    {
+        get
+        {
+            return life;
+        }
+        set
+        {
+            life = value;
+            healthBar.ChangeActualHealth(value);
+        }
+    }
 
     [SerializeField] public float maxHealth;
 
@@ -23,19 +36,19 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        life = maxHealth;
-        healthBar.StartHealthBar(life);
+        Life = maxHealth;
+        healthBar.StartHealthBar(Life);
         audiosource = GetComponent<AudioSource>();
     }
 
     public void TakeDamage(float damage)
     {
-        life -= damage;
-        healthBar.ChangeActualHealth(life);
+        Life -= damage;
+        healthBar.ChangeActualHealth(Life);
         flashEffect.Flash();
         audiosource.PlayOneShot(AudioDamage);
 
-        if (life <= 0)
+        if (Life <= 0)
         {
             PlayerDeath?.Invoke(this, EventArgs.Empty);
             //Destroy(gameObject);
@@ -46,7 +59,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void SetMaxHealth()
     {
-        life = maxHealth;
-        healthBar.ChangeActualHealth(life);
+        Life = maxHealth;
+        healthBar.ChangeActualHealth(Life);
     }
 }

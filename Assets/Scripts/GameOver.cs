@@ -42,6 +42,8 @@ public class GameOver : MonoBehaviour
         healthBar.SetActive(true);
         barraVida.SetActive(true);
         Time.timeScale = 1f;
+
+        StopAllCoroutines();
     }
 
     public void MainMenu(string name1)

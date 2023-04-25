@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         audiosource = GetComponent<AudioSource>();
         Hitpoints = MaxHitpoints;
-        Healthbar.SetHealth(Hitpoints, MaxHitpoints);
+        Healthbar.SetHealth(MaxHitpoints, MaxHitpoints);
     }
 
     private void Update()
