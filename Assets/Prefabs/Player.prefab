@@ -164,7 +164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2788314870612954725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.228, y: -0.569, z: 0}
+  m_LocalPosition: {x: -0.228, y: -0.555, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -309,7 +309,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b6cc924ec832cd94baa472bf06bd0462, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
   hitController: {fileID: 1767580698377037232}
   hitbox: 0.5
   damage: 20
-  timeBetweenAttack: 0.3
+  timeBetweenAttack: 0.25
   attackCooldown: 0
   isAttacking: 0
   AudioAttack: {fileID: 8300000, guid: 1ecbf7356df0d444b98c4b84ac672637, type: 3}

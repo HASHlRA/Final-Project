@@ -21,11 +21,15 @@ public class Pause : MonoBehaviour
 
     [SerializeField] private HealthBar healthBar;
 
+    private PlayerMovement playerMovement;
+
     private void Start()
     {
         GameObject.Find("Player").transform.position = startpoint.position;
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         playerHealth.SetMaxHealth();
+        playerMovement.attackCD();
         Time.timeScale = 1f;
     }
 

@@ -171,6 +171,7 @@ public class PlayerMovement : MonoBehaviour
         if (canMove)
         {
             Move(horizontalMovement * Time.fixedDeltaTime, jump);
+            isAttacking = false;
         }
 
         jump = false;
@@ -326,6 +327,11 @@ public class PlayerMovement : MonoBehaviour
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 
+    }
+
+    public void attackCD()
+    {
+        attackCooldown = 0;
     }
 
 
