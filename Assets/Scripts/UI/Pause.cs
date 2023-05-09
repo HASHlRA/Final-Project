@@ -11,7 +11,7 @@ public class Pause : MonoBehaviour
 
     public string sceneName;
 
-    public string sceneName1;
+    public static string sceneName1;
 
     private bool gamePaused = false;
 

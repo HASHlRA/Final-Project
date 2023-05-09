@@ -60,6 +60,7 @@ public class GoToScene : MonoBehaviour
             if (isAutomatic || (!isAutomatic && manualEnter))
             {
                 FindObjectOfType<PlayerMovement>().nextUuid = uuid;
+                Pause.sceneName1 = sceneName;
                 SceneManager.LoadScene(sceneName);
             }
         }

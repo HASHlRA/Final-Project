@@ -573,6 +573,7 @@ GameObject:
   - component: {fileID: 77931195}
   - component: {fileID: 77931194}
   - component: {fileID: 77931193}
+  - component: {fileID: 77931196}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -630,6 +631,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &77931196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77931192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027606e8f702507468f26aa4d566e02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &216935184
 GameObject:
   m_ObjectHideFlags: 0
@@ -24224,7 +24237,6 @@ MonoBehaviour:
   pauseButton: {fileID: 1062869468}
   menuPause: {fileID: 699899957}
   sceneName: Main_Menu
-  sceneName1: Map01_1
   startpoint: {fileID: 2136723082}
   healthBar: {fileID: 1484885388}
 --- !u!114 &653992881
@@ -24286,7 +24298,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &653992884
 RectTransform:
@@ -24877,6 +24889,14 @@ PrefabInstance:
     - target: {fileID: 4040441518770622214, guid: f48cf075aa45aeb448187be656ec21f9, type: 3}
       propertyPath: m_Name
       value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040441518770622235, guid: f48cf075aa45aeb448187be656ec21f9, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040441518770622235, guid: f48cf075aa45aeb448187be656ec21f9, type: 3}
+      propertyPath: m_GravityScale
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4040441518770622238, guid: f48cf075aa45aeb448187be656ec21f9, type: 3}
       propertyPath: m_RootOrder
@@ -26064,7 +26084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2242817139556554031, guid: e39ac9dd563f06a4285aa785560e7892, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.417377
+      value: 9.22
       objectReference: {fileID: 0}
     - target: {fileID: 2242817139556554031, guid: e39ac9dd563f06a4285aa785560e7892, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30768,7 +30788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136723080}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.85, y: 2.38, z: 0}
+  m_LocalPosition: {x: -25.59, y: 2.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
