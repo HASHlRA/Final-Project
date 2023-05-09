@@ -9,6 +9,7 @@ TagManager:
   - Puerta
   - GameMusic
   - wallEnemy
+  - Potion
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - wallEnemy
   - Puerta
   - Post Processing
-  - 
+  - Potion
   - 
   - 
   - 

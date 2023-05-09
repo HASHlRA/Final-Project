@@ -274,12 +274,13 @@ MonoBehaviour:
   flasheffect: {fileID: 451458786216453422}
   attackController: {fileID: 451458786728228220}
   attackRadius: 1.5
-  attackDamage: 20
+  attackDamage: 15
   Healthbar: {fileID: 6888533602386026475}
   Hitpoints: 0
   MaxHitpoints: 80
   AudioDamaged: {fileID: 8300000, guid: e5a233a5f4445204383b543e26de18c4, type: 3}
   AudioAttack: {fileID: 8300000, guid: 57d4f385e771b0d49a64ad0ac33b0004, type: 3}
+  AudioAttack2: {fileID: 0}
 --- !u!114 &451458786216453422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,11 +335,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6474799193043974251, guid: d0e5149d907b04acbbe4cd4381f7acd2, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6474799193043974251, guid: d0e5149d907b04acbbe4cd4381f7acd2, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6474799193766055881, guid: d0e5149d907b04acbbe4cd4381f7acd2, type: 3}
       propertyPath: m_Pivot.x

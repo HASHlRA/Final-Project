@@ -61,7 +61,7 @@ public class Enemy : MonoBehaviour
     {
         distancePlayer = Vector2.Distance(transform.position, player.position);
         
-        LookPlayer(true);
+        //LookPlayer(true);
     }
 
     private void LateUpdate()
@@ -114,6 +114,8 @@ public class Enemy : MonoBehaviour
 
     public void Attack()
     {
+        //LookPlayer(null);
+
         audiosource.PlayOneShot(AudioAttack);
 
         attack = true;
@@ -121,8 +123,6 @@ public class Enemy : MonoBehaviour
         StartCoroutine(Freeze());
 
         Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
-
-        LookPlayer(null);
 
 
         foreach (Collider2D collision in objects)
@@ -139,13 +139,11 @@ public class Enemy : MonoBehaviour
     {
         rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        yield return new WaitForSeconds(1.75f);
+        yield return new WaitForSeconds(0.5f);
 
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 
         attack = false;
-
-
     }
 
 

@@ -325,6 +325,7 @@ MonoBehaviour:
   MaxHitpoints: 120
   AudioDamaged: {fileID: 8300000, guid: 073b0b59704988a48a68d0302c563152, type: 3}
   AudioAttack: {fileID: 8300000, guid: d9a841bee16c2b245b94dfa696c3df04, type: 3}
+  AudioAttack2: {fileID: 0}
 --- !u!1001 &8944852653950247795
 PrefabInstance:
   m_ObjectHideFlags: 0

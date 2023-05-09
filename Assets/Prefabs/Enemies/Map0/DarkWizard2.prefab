@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5382046408876290141}
   - component: {fileID: 5382046408876290142}
   - component: {fileID: 5382046408876290143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DarkWizard2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -277,9 +277,10 @@ MonoBehaviour:
   attackDamage: 25
   Healthbar: {fileID: 1399428981372288597}
   Hitpoints: 0
-  MaxHitpoints: 150
+  MaxHitpoints: 140
   AudioDamaged: {fileID: 8300000, guid: e5a233a5f4445204383b543e26de18c4, type: 3}
   AudioAttack: {fileID: 8300000, guid: 57d4f385e771b0d49a64ad0ac33b0004, type: 3}
+  AudioAttack2: {fileID: 0}
 --- !u!114 &5382046408876290143
 MonoBehaviour:
   m_ObjectHideFlags: 0
