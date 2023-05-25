@@ -585,6 +585,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1301852925}
     - target: {fileID: 2788314870770278120, guid: a9dd03d17dbba2a42988eb58949c0ab3, type: 3}
+      propertyPath: nextUuid
+      value: Map03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788314870770278120, guid: a9dd03d17dbba2a42988eb58949c0ab3, type: 3}
       propertyPath: onGround
       value: 1
       objectReference: {fileID: 0}
@@ -27004,7 +27008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb207b2a7ba29dd4f9686ddd6a507d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uuid: 
+  uuid: Map03
   facingDirection: {x: 1, y: 0}
 --- !u!4 &1705325267
 Transform:

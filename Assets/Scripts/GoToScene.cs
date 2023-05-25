@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GoToScene : MonoBehaviour
 {
@@ -60,7 +61,7 @@ public class GoToScene : MonoBehaviour
             if (isAutomatic || (!isAutomatic && manualEnter))
             {
                 FindObjectOfType<PlayerMovement>().nextUuid = uuid;
-                Pause.sceneName1 = sceneName;
+                //Pause.sceneName1 = sceneName;
                 SceneManager.LoadScene(sceneName);
             }
         }

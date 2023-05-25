@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
 
     [SerializeField] public float life;
-
+    public string uuid;
     private HealthBar healthBar;
 
     private void Start()
@@ -19,6 +19,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         healthBar.StartHealthBar(life);
+        FindObjectOfType<PlayerMovement>().nextUuid = uuid;
     }
 
     public void Exit()
