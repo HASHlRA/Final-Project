@@ -18,6 +18,11 @@ public class GameOver : MonoBehaviour
 
     [SerializeField] private AudioClip GameOverAudio;
 
+    public string sceneName1;
+
+    public Transform startpoint;
+
+    private PlayerMovement playerMovement;
 
     private void Start()
     {
@@ -42,6 +47,12 @@ public class GameOver : MonoBehaviour
         healthBar.SetActive(true);
         barraVida.SetActive(true);
         Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneName1);
+        GameObject.Find("Player").transform.position = startpoint.position;
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        playerHealth.SetMaxHealth();
+        playerMovement.attackCD();
 
         StopAllCoroutines();
     }

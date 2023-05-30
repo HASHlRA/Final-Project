@@ -11,8 +11,8 @@ public class HealthPickUp : MonoBehaviour
 
     private void Awake()
     {
-        playerHealth = FindObjectOfType<PlayerHealth>();
-        
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -11792,6 +11792,7 @@ RectTransform:
   - {fileID: 353398479}
   - {fileID: 385082731}
   - {fileID: 989946496}
+  - {fileID: 597011391}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11816,6 +11817,8 @@ MonoBehaviour:
   healthBar: {fileID: 1709287810}
   barraVida: {fileID: 7047979133483153676, guid: a859db3992a1e2f489fc0411eade8586, type: 3}
   GameOverAudio: {fileID: 8300000, guid: 9ffbeda4b0db07f49a96c99b45e8a1ec, type: 3}
+  sceneName1: Map04_01
+  startpoint: {fileID: 597011391}
 --- !u!114 &190351196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13740,12 +13743,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597011390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.26, y: 0.26, z: 0}
+  m_LocalPosition: {x: -996.26, y: -539.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1542079027}
-  m_RootOrder: 0
+  m_Father: {fileID: 190351194}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &597011392
 MonoBehaviour:
@@ -22561,7 +22564,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 597011391}
   - {fileID: 1642386158}
   m_Father: {fileID: 28359179}
   m_RootOrder: 1
@@ -23563,7 +23565,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1542079027}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1642386159
 MonoBehaviour:

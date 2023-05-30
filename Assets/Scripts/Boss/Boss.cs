@@ -11,6 +11,8 @@ public class Boss : MonoBehaviour
 
     public Transform player;
 
+    public int nextSceneLoad;
+
     [SerializeField] private bool lookingRight;
 
 
@@ -45,6 +47,7 @@ public class Boss : MonoBehaviour
     [SerializeField] private AudioClip AudioAttack2;
     [SerializeField] private AudioClip AudioApparition;
 
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -54,6 +57,7 @@ public class Boss : MonoBehaviour
         audiosource = GetComponent<AudioSource>();
         audiosource.PlayOneShot(AudioApparition);
         LookPlayer(true);
+        nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 2;
     }
 
 
@@ -89,7 +93,12 @@ public class Boss : MonoBehaviour
     private IEnumerator GoNextScene()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(nextSceneLoad);
+        if(nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
+        {
+            PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+        }
+        //SceneManager.LoadScene(sceneName);
     }
 
 
