@@ -8,6 +8,7 @@ public class SceneManaging : MonoBehaviour
 
     public void ChangeScene(int sceneIndex)
     {
+        //PlayerPrefs.SetInt("levelAt", -1);
         SceneManager.LoadScene(sceneIndex);
     }
 

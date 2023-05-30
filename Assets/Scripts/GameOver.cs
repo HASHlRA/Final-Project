@@ -42,6 +42,8 @@ public class GameOver : MonoBehaviour
 
     public void Restart(string name)
     {
+        
+        
         SceneManager.LoadScene(name);
         gameoverMenu.SetActive(false);
         healthBar.SetActive(true);

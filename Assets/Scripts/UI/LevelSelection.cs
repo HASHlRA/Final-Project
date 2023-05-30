@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LevelSelection : MonoBehaviour
 {
     public Button[] lvlButtons;
+    public int[] indexOpen;
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,7 @@ public class LevelSelection : MonoBehaviour
 
         for (int i = 0; i < lvlButtons.Length; i++)
         {
-            if (i + 0 > levelAt)
+            if (indexOpen[i] > levelAt)
                 lvlButtons[i].interactable = false;
         }
     }

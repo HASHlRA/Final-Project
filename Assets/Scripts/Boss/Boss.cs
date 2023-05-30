@@ -92,8 +92,11 @@ public class Boss : MonoBehaviour
 
     private IEnumerator GoNextScene()
     {
+
+        Debug.Log(nextSceneLoad + "ESCENA ABIERTA");
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(nextSceneLoad);
+
         if(nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
         {
             PlayerPrefs.SetInt("levelAt", nextSceneLoad);

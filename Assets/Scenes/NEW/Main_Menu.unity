@@ -1213,7 +1213,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -8, y: -3, z: 0}
-  m_Size: {x: 15, y: 6, z: 1}
+  m_Size: {x: 3614, y: 627, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -2295,7 +2295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &711137343
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2910,6 +2910,7 @@ MonoBehaviour:
   - {fileID: 887321699}
   - {fileID: 1963427295}
   - {fileID: 99618092}
+  indexOpen: 00000000030000000500000006000000
 --- !u!114 &757907968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2922,6 +2923,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2853c6f6877160e468f065c78850cf0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseButton: {fileID: 0}
+  menuPause: {fileID: 0}
+  startpoint: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!4 &757907969
 Transform:
   m_ObjectHideFlags: 0
