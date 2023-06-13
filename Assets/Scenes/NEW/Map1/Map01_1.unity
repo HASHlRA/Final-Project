@@ -25091,8 +25091,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4040441518770622235, guid: f48cf075aa45aeb448187be656ec21f9, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040441518770622235, guid: f48cf075aa45aeb448187be656ec21f9, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040441518770622235, guid: f48cf075aa45aeb448187be656ec21f9, type: 3}
       propertyPath: m_GravityScale
-      value: 15
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4040441518770622238, guid: f48cf075aa45aeb448187be656ec21f9, type: 3}
       propertyPath: m_RootOrder
@@ -26288,7 +26296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2242817139556554031, guid: e39ac9dd563f06a4285aa785560e7892, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9
+      value: 8.75
       objectReference: {fileID: 0}
     - target: {fileID: 2242817139556554031, guid: e39ac9dd563f06a4285aa785560e7892, type: 3}
       propertyPath: m_LocalPosition.y
