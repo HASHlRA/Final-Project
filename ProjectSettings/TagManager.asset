@@ -10,6 +10,8 @@ TagManager:
   - GameMusic
   - wallEnemy
   - Potion
+  - Fall
+  - Counter
   layers:
   - Default
   - TransparentFX

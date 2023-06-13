@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
@@ -10,9 +11,11 @@ public class Pause : MonoBehaviour
 
     [SerializeField] private GameObject menuPause;
 
+    [SerializeField] private GameObject playerHealthbar;
+
     public string sceneName;
 
-    public string sceneName1;
+    //public string sceneName1;
 
     private bool gamePaused = false;
 
@@ -22,17 +25,18 @@ public class Pause : MonoBehaviour
 
     [SerializeField] private HealthBar healthBar;
 
-    private PlayerMovement playerMovement;
+    public PlayerMovement playerMovement;
+
+
 
     private void Awake()
     {
-       
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
     }
+
 
     private void Start()
     {
-        pauseButton.SetActive(true);
         Restart();
     }
 
@@ -69,12 +73,9 @@ public class Pause : MonoBehaviour
 
     public void Restart()
     {
-
         gamePaused = false;
         pauseButton.SetActive(true);
         menuPause.SetActive(false);
-        Time.timeScale = 1f;
-        //SceneManager.LoadScene(sceneName1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         startpoint = GameObject.Find("StartPoint").transform;
         GameObject.Find("Player").transform.position = startpoint.position;
@@ -82,9 +83,33 @@ public class Pause : MonoBehaviour
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         playerHealth.SetMaxHealth();
         playerMovement.attackCD();
+        playerHealthbar.SetActive(true);
+        Time.timeScale = 1f;
 
-       
+    }
 
+    public void StartScene()
+    {
+        gamePaused = false;
+        pauseButton.SetActive(true);
+        menuPause.SetActive(false);
+        startpoint = GameObject.Find("StartPoint").transform;
+        GameObject.Find("Player").transform.position = startpoint.position;
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        playerHealth.SetMaxHealth();
+        playerMovement.attackCD();
+        playerHealthbar.SetActive(true);
+        Time.timeScale = 1f;
+    }
+
+    public void Victory()
+    {
+        gamePaused = true;
+        pauseButton.SetActive(false);
+        menuPause.SetActive(false);
+        playerHealthbar.SetActive(false);
+        Time.timeScale = 0f;
     }
 
     public void Exit()
@@ -92,8 +117,9 @@ public class Pause : MonoBehaviour
         gamePaused = true;
         pauseButton.SetActive(false);
         menuPause.SetActive(false);
+        playerHealthbar.SetActive(false);
         SceneManager.LoadScene(sceneName);
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
     }
 
 }

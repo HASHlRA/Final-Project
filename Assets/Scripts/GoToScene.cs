@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 using System;
 
 public class GoToScene : MonoBehaviour
@@ -12,15 +14,24 @@ public class GoToScene : MonoBehaviour
     public bool isAutomatic;
     public bool manualEnter;
 
-    [SerializeField] private int enemiesQuantity;
-    [SerializeField] private int enemiesDestroyed;
+    [SerializeField] public int enemiesQuantity;
+    [SerializeField] public int enemiesDestroyed;
+
+    GameObject[] enemies;
+    public TMP_Text enemyCountText;
+
 
     private void Start()
     {
         enemiesQuantity = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        enemyCountText = GameObject.Find("Left").GetComponent<TMP_Text>();
     }
-    private void Update()
+
+    public void Update()
     {
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        enemyCountText.text = "Enemies : " + enemies.Length.ToString();
+
         manualEnter = false;
 
         if (!isAutomatic && Input.GetButtonDown("Door"))
@@ -28,6 +39,7 @@ public class GoToScene : MonoBehaviour
             manualEnter = true;
         }
     }
+
 
     // Teleport automático
     private void OnTriggerEnter2D(Collider2D other)

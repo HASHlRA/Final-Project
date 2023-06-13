@@ -17,13 +17,14 @@ public class Boss_WalkBehaviour : StateMachineBehaviour
     {
         boss = animator.GetComponent<Boss>();
         rb2D = boss.rb2D;
-        boss.LookPlayer(true);
+        
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         rb2D.velocity = new Vector2(velocityMovement, rb2D.velocity.y) * animator.transform.right;
+        boss.LookPlayer(true);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

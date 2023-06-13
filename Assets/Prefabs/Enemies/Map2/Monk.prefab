@@ -229,6 +229,7 @@ MonoBehaviour:
   MaxHitpoints: 120
   AudioDamaged: {fileID: 8300000, guid: 19af0114deb21234bae94cd3431500f1, type: 3}
   AudioAttack: {fileID: 8300000, guid: 30f939168d1f914449fc6727598d28b2, type: 3}
+  AudioAttack2: {fileID: 0}
 --- !u!82 &1416100308569078720
 AudioSource:
   m_ObjectHideFlags: 0
@@ -238,7 +239,7 @@ AudioSource:
   m_GameObject: {fileID: 1416100308569078335}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d6b04e33e2599b643be8ba7d4f789a84, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.5

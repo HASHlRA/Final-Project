@@ -4,27 +4,35 @@ using UnityEngine;
 
 public class Enemy_IdleBehaviour : StateMachineBehaviour
 {
+    [SerializeField] private float velocity;
+
+    private Vector3 StartPosition;
 
     private Enemy enemy;
 
-    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+    //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.SetInteger("randomNumber", Random.Range(0, 2));
-        enemy = animator.GetComponent<Enemy>();
+        enemy = animator.gameObject.GetComponent<Enemy>();
+        StartPosition = enemy.StartPosition;
+        if (animator.transform.position != StartPosition)
+        {
+            animator.SetTrigger("Return");
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{
-    //    //enemy.LookPlayer(true);
+    //
     //}
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+    
+    }
+}
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -32,9 +40,8 @@ public class Enemy_IdleBehaviour : StateMachineBehaviour
     //    // Implement code that processes and affects root motion
     //}
 
-    // OnStateIK is called right after Animator.OnAnimatorIK()
-    //override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that sets up animation IK (inverse kinematics)
-    //}
-}
+// OnStateIK is called right after Animator.OnAnimatorIK()
+//override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+//{
+//    // Implement code that sets up animation IK (inverse kinematics)
+//}

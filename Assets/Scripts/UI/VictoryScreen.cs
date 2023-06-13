@@ -17,11 +17,12 @@ public class VictoryScreen : MonoBehaviour
     {
         audiosource = GetComponent<AudioSource>();
         audiosource.PlayOneShot(VictoryAudio);
+        FindObjectOfType<Pause>().Victory();
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(sceneName1);
+        FindObjectOfType<Pause>().StartScene();
     }
 
     public void Exit()

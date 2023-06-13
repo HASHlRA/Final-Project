@@ -44,6 +44,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AudioClip AudioAttack2;
 
 
+    public Vector2 StartPosition;
+    private SpriteRenderer spriteRenderer;
+
+
 
 
 
@@ -55,6 +59,8 @@ public class Enemy : MonoBehaviour
         audiosource = GetComponent<AudioSource>();
         Hitpoints = MaxHitpoints;
         Healthbar.SetHealth(MaxHitpoints, MaxHitpoints);
+        StartPosition = transform.position;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -144,6 +150,16 @@ public class Enemy : MonoBehaviour
         rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
 
         attack = false;
+    }
+
+    public void Turn(Vector3 objective)
+    {
+        spriteRenderer.flipX = true;
+    }
+
+    public void Turn2(Vector3 objective)
+    {
+        spriteRenderer.flipX = false;
     }
 
 

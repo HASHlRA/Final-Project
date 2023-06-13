@@ -6,7 +6,7 @@ public class SingletonOnLoad : MonoBehaviour
 {
     private static SingletonOnLoad instance;
 
-    private void Awake()
+    private void Start()
     {
         if (instance!=null)
         {
