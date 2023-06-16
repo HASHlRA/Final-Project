@@ -82,6 +82,7 @@ public class Boss : MonoBehaviour
 
         if (health <= 0)
         {
+            rb2D.constraints = RigidbodyConstraints2D.FreezePositionY;
             animator.SetTrigger("Death");
             GetComponent<BoxCollider2D>().enabled = false;
             StartCoroutine(GoNextScene());
@@ -146,7 +147,7 @@ public class Boss : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
 
-        rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
+        rb2D.constraints = ~RigidbodyConstraints2D.FreezePositionX;
 
 
         attack = false;

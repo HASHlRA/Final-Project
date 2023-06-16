@@ -51,6 +51,7 @@ public class Enemy : MonoBehaviour
 
 
 
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -66,13 +67,21 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         distancePlayer = Vector2.Distance(transform.position, player.position);
-        
+
         //LookPlayer(true);
     }
 
     private void LateUpdate()
     {
         animator.SetFloat("distancePlayer", distancePlayer);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Ground")
+        {
+            Destroy();
+        }
     }
 
     public void GetDamage(float damage)
@@ -99,6 +108,7 @@ public class Enemy : MonoBehaviour
     private void Death()
     {
         animator.SetTrigger("Death");
+        rb2D.constraints = RigidbodyConstraints2D.FreezePositionY;
         GetComponent<BoxCollider2D>().enabled = false;
         dead = true;
     }
@@ -147,7 +157,7 @@ public class Enemy : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        rb2D.constraints = ~RigidbodyConstraints2D.FreezePosition;
+        rb2D.constraints = ~RigidbodyConstraints2D.FreezePositionX;
 
         attack = false;
     }

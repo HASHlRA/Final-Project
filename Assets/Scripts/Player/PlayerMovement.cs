@@ -116,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+
         inputX = Input.GetAxisRaw("Horizontal");
         horizontalMovement = inputX * velocityMovement;
         transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);

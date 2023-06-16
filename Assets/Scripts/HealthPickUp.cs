@@ -6,8 +6,15 @@ public class HealthPickUp : MonoBehaviour
 {
 
     PlayerHealth playerHealth;
+    [SerializeField] private AudioClip heal;
+    private AudioSource audiosource;
 
     public float healthBonus = 10;
+
+    private void Start()
+    {
+        audiosource = GetComponent<AudioSource>();
+    }
 
     private void Awake()
     {
@@ -19,7 +26,11 @@ public class HealthPickUp : MonoBehaviour
     {
         if (playerHealth.Life < playerHealth.maxHealth)
         {
-            Destroy(gameObject);
+            audiosource.PlayOneShot(heal);
+
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<Collider2D>().enabled = false;
+
             playerHealth.Life = playerHealth.Life + healthBonus;
         }
     }

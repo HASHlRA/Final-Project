@@ -126,16 +126,16 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2242817139556554035}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000
+  m_Mass: 10000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Material: {fileID: 6200000, guid: b6cc924ec832cd94baa472bf06bd0462, type: 2}
+  m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 6
@@ -281,6 +281,7 @@ MonoBehaviour:
   AudioDamaged: {fileID: 8300000, guid: 33692cb6ed6b92043b37bddfef997c03, type: 3}
   AudioAttack: {fileID: 8300000, guid: 05be432db8aac5f409310b4a268b1612, type: 3}
   AudioAttack2: {fileID: 0}
+  StartPosition: {x: 0, y: 0}
 --- !u!114 &2242817139556554030
 MonoBehaviour:
   m_ObjectHideFlags: 0

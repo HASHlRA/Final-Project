@@ -24,11 +24,12 @@ public class GoToScene : MonoBehaviour
     private void Start()
     {
         enemiesQuantity = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        enemyCountText = GameObject.Find("Left").GetComponent<TMP_Text>();
     }
 
     public void Update()
     {
+        
+        enemyCountText = GameObject.Find("Left").GetComponent<TMP_Text>();
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         enemyCountText.text = "Enemies : " + enemies.Length.ToString();
 

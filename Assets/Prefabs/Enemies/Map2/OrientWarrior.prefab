@@ -105,7 +105,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17032099, y: 0.02706784}
+  m_Offset: {x: 0.17032099, y: 0.042740464}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -116,7 +116,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.359971, y: 1.2149976}
+  m_Size: {x: 1.359971, y: 1.1836524}
   m_EdgeRadius: 0
 --- !u!50 &4152194434590751294
 Rigidbody2D:
@@ -126,16 +126,16 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4152194434590751289}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000
+  m_Mass: 10000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Material: {fileID: 6200000, guid: b6cc924ec832cd94baa472bf06bd0462, type: 2}
+  m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 6
@@ -179,7 +179,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.8686371
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -295,6 +295,7 @@ MonoBehaviour:
   AudioDamaged: {fileID: 8300000, guid: e5a233a5f4445204383b543e26de18c4, type: 3}
   AudioAttack: {fileID: 8300000, guid: 2d98e3a5f1a88a14b94f526086c5680e, type: 3}
   AudioAttack2: {fileID: 0}
+  StartPosition: {x: 0, y: 0}
 --- !u!1 &4152194435514897496
 GameObject:
   m_ObjectHideFlags: 0

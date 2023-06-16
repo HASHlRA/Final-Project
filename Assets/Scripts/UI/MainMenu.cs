@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         //healthBar.StartHealthBar(life);
+        Time.timeScale = 1f;
     }
 
     public void Play()

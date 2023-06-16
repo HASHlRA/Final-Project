@@ -9,6 +9,9 @@ public class Enemy_WalkBehaviour : StateMachineBehaviour
 
     private Rigidbody2D rb2D;
 
+
+
+
     [SerializeField] private float velocityMovement;
 
 
@@ -19,6 +22,7 @@ public class Enemy_WalkBehaviour : StateMachineBehaviour
         rb2D = enemy.rb2D;
         animator.SetInteger("randomNumber", Random.Range(0, 2));
         enemy.LookPlayer(true);
+
 
     }
 
