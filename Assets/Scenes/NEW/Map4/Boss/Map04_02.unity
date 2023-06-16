@@ -14943,7 +14943,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: c6fb482a1bf00ef47829a3020842b1cc, type: 2}
   m_audioClip: {fileID: 8300000, guid: defb2849f39bb1a4c9f6e30aa3104a75, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.23
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16536,6 +16536,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1310144836437881918, guid: edb7b91352acf4340896d0f7ecc4b2f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.96
+      objectReference: {fileID: 0}
     - target: {fileID: 1310144837418611635, guid: edb7b91352acf4340896d0f7ecc4b2f0, type: 3}
       propertyPath: m_Size.x
       value: 1.396488
@@ -16604,6 +16608,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 994164823}
+    - target: {fileID: 1310144837418611647, guid: edb7b91352acf4340896d0f7ecc4b2f0, type: 3}
+      propertyPath: attackRadius
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb7b91352acf4340896d0f7ecc4b2f0, type: 3}
 --- !u!1 &1917871130

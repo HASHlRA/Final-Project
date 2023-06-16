@@ -7398,22 +7398,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2727443097335840182, guid: 8210d050be9741b47adceccf1210a8e0, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: d6b04e33e2599b643be8ba7d4f789a84, type: 2}
-    - target: {fileID: 2727443097393023189, guid: 8210d050be9741b47adceccf1210a8e0, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2727443097393023189, guid: 8210d050be9741b47adceccf1210a8e0, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 994164823}
-    - target: {fileID: 2727443097393023189, guid: 8210d050be9741b47adceccf1210a8e0, type: 3}
-      propertyPath: nextSceneLoad
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2727443097393023208, guid: 8210d050be9741b47adceccf1210a8e0, type: 3}
       propertyPath: m_RootOrder
       value: 1
