@@ -9041,29 +9041,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7720458908244530130, guid: 3cb69bb4cbaf5834ca602720efde8232, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 2788314870770278122, guid: a9dd03d17dbba2a42988eb58949c0ab3, type: 3}
-    - target: {fileID: 7720458908244530130, guid: 3cb69bb4cbaf5834ca602720efde8232, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 10026856}
-    - target: {fileID: 7720458908244530134, guid: 3cb69bb4cbaf5834ca602720efde8232, type: 3}
-      propertyPath: m_Mass
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7720458908244530134, guid: 3cb69bb4cbaf5834ca602720efde8232, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7720458908244530134, guid: 3cb69bb4cbaf5834ca602720efde8232, type: 3}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7720458908244530134, guid: 3cb69bb4cbaf5834ca602720efde8232, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7720458908244530143, guid: 3cb69bb4cbaf5834ca602720efde8232, type: 3}
       propertyPath: m_Name
       value: Earth_Monk
