@@ -28,10 +28,10 @@ public class Steam_Integration : MonoBehaviour
     {
         Steamworks.SteamClient.RunCallbacks();
 
-        var playername = Steamworks.SteamClient.Name;
-        var playernameid = Steamworks.SteamClient.SteamId;
+        //var playername = Steamworks.SteamClient.Name;
+        //var playernameid = Steamworks.SteamClient.SteamId;
 
-        Steamworks.SteamScreenshots.TriggerScreenshot();
+        //Steamworks.SteamScreenshots.TriggerScreenshot();
     }
 
     private void OnApplicationQuit()
