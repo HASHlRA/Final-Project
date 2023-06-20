@@ -132,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
             audiosource.PlayOneShot(AudioJump);
         }
 
-        if (Input.GetKeyDown(KeyCode.X) && canDash && onGround)
+        if (Input.GetButtonDown("Dash") && canDash && onGround)
         {
             StartCoroutine(Dash());
             audiosource.PlayOneShot(AudioDash);
