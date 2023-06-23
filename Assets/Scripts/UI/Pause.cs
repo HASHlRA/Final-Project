@@ -43,7 +43,7 @@ public class Pause : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetButtonDown("Escape"))
         {
             if(gamePaused)
             {
